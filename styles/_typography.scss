@@ -1,0 +1,63 @@
+$primary: #f6a823;
+$secondary: #2c2c2c;
+$tertiary: #f0efed;
+$tertiary: #05afc1;
+$quaternary: #a82706;
+$quinary: #4f4f4f;
+$senary: #285e64;
+$primaryFont: 'Lora', 'Bold', serif;
+$secondaryFOnt: 'Roboto', 'Bold', sans-serif;
+$tertiaryFOnt: 'Roboto', 'Regular', sans-serif;
+
+body {
+    @include fontSize(20);
+    letter-spacing: 1px;
+    color: $secondary;
+    // font-family: 
+}
+
+h1 {
+    @include fontSize(80);
+    line-height: 92px;
+    letter-spacing: 0;
+    // font-family: 
+}
+
+h2 {
+    @include fontSize(42);
+    letter-spacing: 1px;
+    // font-family: 
+}
+
+h3 {
+    @include fontSize(32);
+    letter-spacing: 1px;
+    // font-family: 
+}
+
+h4 {
+    @include fontSize(24);
+    letter-spacing: 1px;
+    // font-family: 
+}
+
+h5 {
+    @include fontSize(24);
+    letter-spacing: 1px;
+    color: $tertiary;
+    // font-family: 
+}
+
+button {
+    @include fontSize(20);
+    letter-spacing: 1px;
+    // font-family: 
+}
+
+.menu {
+    @include fontSize(20);
+    letter-spacing: 0;
+    line-height: 32px;
+}
+
+
