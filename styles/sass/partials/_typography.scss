@@ -6,58 +6,59 @@ $quaternary: #a82706;
 $quinary: #4f4f4f;
 $senary: #285e64;
 $primaryFont: 'Lora', 'Bold', serif;
-$secondaryFOnt: 'Roboto', 'Bold', sans-serif;
-$tertiaryFOnt: 'Roboto', 'Regular', sans-serif;
+$secondaryFont: 'Roboto', 'Bold', sans-serif;
+$tertiaryFont: 'Roboto', 'Regular', sans-serif;
 
 body {
     @include fontSize(20);
     letter-spacing: 1px;
     color: $secondary;
-    // font-family: 
+    font-family: $tertiaryFont;
 }
 
 h1 {
     @include fontSize(80);
     line-height: 92px;
     letter-spacing: 0;
-    // font-family: 
+    font-family: $primaryFont;
 }
 
 h2 {
     @include fontSize(42);
     letter-spacing: 1px;
-    // font-family: 
+    font-family: $secondaryFont;
 }
 
 h3 {
     @include fontSize(32);
     letter-spacing: 1px;
-    // font-family: 
+    font-family: $secondaryFont;    
 }
 
 h4 {
     @include fontSize(24);
     letter-spacing: 1px;
-    // font-family: 
+    font-family: $secondaryFont;
 }
 
 h5 {
     @include fontSize(24);
     letter-spacing: 1px;
     color: $tertiary;
-    // font-family: 
+    font-family: $secondaryFont;
 }
 
 button {
     @include fontSize(20);
     letter-spacing: 1px;
-    // font-family: 
+    font-family: $secondaryFont;
 }
 
 .menu {
     @include fontSize(20);
     letter-spacing: 0;
     line-height: 32px;
+    font-family: $secondaryFont;
 }
 
 
