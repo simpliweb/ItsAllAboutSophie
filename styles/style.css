@@ -338,6 +338,7 @@ button {
   background-color: #f6a823;
   min-height: 100vh;
   max-width: 320px;
+  left: -320px;
   position: fixed;
   top: 0;
   z-index: 20;
@@ -350,6 +351,9 @@ button {
   padding: 50px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.slideOutNav.open {
+  left: 0;
 }
 .slideOutNav h1 {
   margin: 0;
