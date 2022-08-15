@@ -239,11 +239,11 @@ body {
 }
 
 h1 {
-  font-size: 80px;
-  font-size: 4rem;
-  line-height: 92px;
+  font-size: 30px;
+  font-size: 1.5rem;
   letter-spacing: 0;
   font-family: "Lora", "Bold", serif;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -271,7 +271,7 @@ h5 {
   font-size: 24px;
   font-size: 1.2rem;
   letter-spacing: 1px;
-  color: #05afc1;
+  color: #f0efed;
   font-family: "Roboto", "Bold", sans-serif;
 }
 
@@ -315,5 +315,64 @@ button {
 }
 
 .button {
-  background-color: #05afc1;
+  background-color: #f0efed;
+}
+
+.navBar {
+  background-color: #f6a823;
+}
+.navBar .wrapper {
+  border: 5px solid red;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navBar .wrapper .topNav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+}
+
+.slideOutNav {
+  background-color: #f6a823;
+  min-height: 100vh;
+  max-width: 320px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-size: 1.5rem;
+  line-height: 45px;
+  width: 100%;
+  padding: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.slideOutNav h1 {
+  margin: 0;
+  font-family: inherit;
+}
+.slideOutNav li :hover {
+  color: #05afc1;
+}
+.slideOutNav .menuOpen {
+  display: none;
+}
+.slideOutNav .menuClose {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 30px;
+  font-size: 1.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.slideOutNav .menuClose span {
+  display: none;
+}
+.slideOutNav .menuClose :hover {
+  color: #f0efed;
 }

@@ -1,0 +1,69 @@
+.navBar {
+    background-color: $primary;
+    
+    .wrapper {
+        border: 5px solid red;
+        position: sticky;
+        top: 0;
+        z-index: 10;        
+
+       .topNav {
+            li {
+            display: flex;
+            float: left;
+            }
+       }
+    }
+
+
+}
+
+
+.slideOutNav {
+    background-color: $primary;    
+    min-height: 100vh;
+    max-width: 320px;
+    // left: -320px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    font-weight: bold;
+    text-transform: uppercase;
+    @include fontSize(30);
+    line-height: 45px;
+    width: 100%;
+    padding: 50px;
+    transition: 0.3s;
+
+    h1 {
+        margin: 0;
+        font-family: inherit;
+    }
+
+    li {    
+        & :hover {
+        color: $quaternary;
+        }
+        
+    }
+    .menuOpen {
+        display: none; 
+    }
+
+    .menuClose {   
+        display: block;
+        width: 100%;
+        text-align: right;
+        @include fontSize(30);
+        transition: 0.3s;
+
+        
+        span {
+            display: none;
+        }
+
+        & :hover {
+            color: $tertiary;
+        }
+    }
+}

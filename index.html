@@ -7,6 +7,8 @@
     <title>Home</title>
     <script src="https://kit.fontawesome.com/0c33a27114.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css"></link>
+	<script src="./script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,21 +16,31 @@
 <body>
     <a href="#mainContent" class="skipLink">Skip to the main content.</a>
     
-    <nav class="navBar">
+    <div class="navBar">
         <div class="wrapper">
-            <button class="hambergerNav">
-                <i class="fa-solid fa-bars"></i>
-                <!-- <i class="fa-solid fa-citrus-slice"></i> use for hover effect --> 
-            </button>    
-            <span>Open Main Menu</span>
-
+            <nav class="topNav">
+                <button class="menuOpen">
+                    <i class="fa-solid fa-bars" alt="three white lines for hamburger menu for nav bar"></i>                    
+                </button> 
+                <ul class="mainMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="#" class="logo">
+                            <h1>Sophie</h1>
+                        </a>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div> <!-- END .wrappper-->
     
-        <div class="slideOutNav">
-            <button id="menuClose">
-                <i class="fa-solid fa-xmark"></i>
+        <div class="slideOutNav">                           
+
+            <button class="menuClose">
+                <i class="fa-solid fa-xmark" alt="x for closing hamburger menu for nav bar"></i>
             </button>
-            <span>Close Main Menu</span>
 
             <nav>
                 <ul class="mainMenu">
@@ -44,7 +56,7 @@
                 </ul>
             </nav>
         </div> <!-- END .slideOutNav -->
-    </nav> <!-- END .navBar -->
+    </div> <!-- END .navBar -->
 
     <header>
         <div class="wrapper">
