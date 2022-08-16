@@ -230,6 +230,22 @@ template {
   overflow: hidden;
 }
 
+.skipLink {
+  background-color: #f6a823;
+  color: black;
+  font-size: 1rem;
+  padding: 10px 0;
+  position: absolute;
+  left: -1000px;
+  top: 0;
+  z-index: 999;
+}
+.skipLink:focus {
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
 body {
   font-size: 20px;
   font-size: 1rem;
@@ -332,6 +348,10 @@ button {
   display: -ms-flexbox;
   display: flex;
   float: left;
+}
+
+.menuOpen {
+  display: none;
 }
 
 .slideOutNav {
