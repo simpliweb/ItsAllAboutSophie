@@ -258,6 +258,7 @@ h1 {
   font-size: 30px;
   font-size: 1.5rem;
   letter-spacing: 0;
+  color: #2c2c2c;
   font-family: "Lora", "Bold", serif;
   text-transform: uppercase;
 }
@@ -345,21 +346,41 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .navBar .mainMenu li {
   text-transform: uppercase;
 }
+.navBar .mainMenu li #firstA {
+  color: #f0efed;
+}
+.navBar .mainMenu li #firstA:hover, .navBar .mainMenu li #firstA:focus {
+  color: #2c2c2c;
+}
 .navBar .mainMenu li a {
   text-decoration: none;
-  margin: 0 30px;
+  color: #2c2c2c;
+  font-weight: bold;
+  margin: 0 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navBar .mainMenu li a:hover, .navBar .mainMenu li a:focus {
+  color: #f0efed;
 }
 .navBar .mainMenu h1 {
-  padding: 0;
-  margin: 0;
+  padding-bottom: 3px;
+  margin: 0 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navBar .mainMenu h1:hover, .navBar .mainMenu h1:focus {
+  color: #f0efed;
 }
 
 .menuOpen {
