@@ -1,21 +1,52 @@
 .navBar {
     background-color: $primary;
-    
-    .wrapper {
-        border: 5px solid red;
-        position: sticky;
-        top: 0;
-        z-index: 10;        
+    border: 5px solid red;
+    position: sticky;
+    top: 0;
+    z-index: 10;      
 
-       .topNav {
-            li {
-            display: flex;
-            float: left;
+    .mainMenu {
+        display: flex;    
+        align-items: center;
+        justify-content: center;
+        
+        li {
+            text-transform: uppercase;
+                      
+            
+            #firstA {
+                color: $tertiary;
+                &:hover,
+                &:focus {
+                    color: $secondary;
+                }
             }
-       }
+            a {
+                text-decoration: none;
+                color: $secondary;
+                font-weight: bold;
+                margin: 0 20px;
+                transition: 0.3s;
+
+               &:hover,
+               &:focus {
+                    color: $tertiary;
+               } 
+                
+            }
+        }
+
+        h1 {
+            padding-bottom: 3px;
+            margin: 0 25px;  
+            transition: 0.3s;
+            
+            &:hover,
+            &:focus {
+                color: $tertiary;
+            }
+        }             
     }
-
-
 }
 
 .menuOpen {
