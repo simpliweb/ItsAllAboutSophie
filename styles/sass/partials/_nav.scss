@@ -1,21 +1,53 @@
 .navBar {
     background-color: $primary;
-    
-    .wrapper {
-        border: 5px solid red;
-        position: sticky;
-        top: 0;
-        z-index: 10;        
+    position: sticky;
+    top: 0;
+    z-index: 10;
 
-       .topNav {
-            li {
-            display: flex;
-            float: left;
+    .mainMenu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            text-transform: uppercase;
+
+
+            #firstA {
+                color: $tertiary;
+
+                &:hover,
+                &:focus {
+                    color: $secondary;
+                }
             }
-       }
+
+            a {
+                text-decoration: none;
+                color: $secondary;
+                font-weight: bold;
+                margin: 0 20px;
+                transition: 0.3s;
+
+                &:hover,
+                &:focus {
+                    color: $tertiary;
+                }
+
+            }
+        }
+
+        h1 {
+            padding-bottom: 3px;
+            margin: 0 25px;
+            transition: 0.3s;
+
+            &:hover,
+            &:focus {
+                color: $tertiary;
+            }
+        }
     }
-
-
 }
 
 .menuOpen {
@@ -23,7 +55,7 @@
 }
 
 .slideOutNav {
-    background-color: $primary;    
+    background-color: $primary;
     min-height: 100vh;
     max-width: 320px;
     left: -320px;
@@ -47,25 +79,26 @@
         font-family: inherit;
     }
 
-    li {    
+    li {
         & :hover {
-        color: $quaternary;
+            color: $quaternary;
         }
-        
-    }
-    .menuOpen {
-        display: none; 
-    }
-   
 
-    .menuClose {   
+    }
+
+    .menuOpen {
+        display: none;
+    }
+
+
+    .menuClose {
         display: block;
         width: 100%;
         text-align: right;
         @include fontSize(30);
         transition: 0.3s;
 
-        
+
         span {
             display: none;
         }

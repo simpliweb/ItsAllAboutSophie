@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <script src="https://kit.fontawesome.com/0c33a27114.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/style.css"></link>
-	<script src="./script.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    </link>
+    <script src="./script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <a href="#mainContent" class="skipLink">Skip to the main content.</a>
-    
+
     <div class="navBar">
         <div class="wrapper">
             <nav class="topNav">
                 <button class="menuOpen">
-                    <i class="fa-solid fa-bars" alt="three white lines for hamburger menu for nav bar"></i>                    
-                </button> 
+                    <i class="fa-solid fa-bars" alt="three white lines for hamburger menu for nav bar"></i>
+                </button>
                 <ul class="mainMenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a id="firstA" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li>
-                        <a href="#" class="logo">
+                        <a href="#home" class="logo">
                             <h1>Sophie</h1>
                         </a>
                     </li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div> <!-- END .wrappper-->
-    
-        <div class="slideOutNav open">                           
+
+        <div class="slideOutNav open">
 
             <button class="menuClose">
                 <i class="fa-solid fa-xmark" alt="x for closing hamburger menu for nav bar"></i>
             </button>
 
             <nav>
-                <ul class="mainMenu">
+                <ul class="slideOutMenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li>
@@ -58,7 +61,7 @@
         </div> <!-- END .slideOutNav -->
     </div> <!-- END .navBar -->
 
-    <header>
+    <header id="home">
         <div class="wrapper">
             <div class="headingTitle">
                 <div class="headingImgContainer">
@@ -67,8 +70,9 @@
                 <h2>Sophie</h2>
             </div>
             <div class="headerImgContainer">
-                <img src="./assets/blog-image-2.jpg" alt="a blonde female with two side bun, wearing red sweater, holding half cut oranges per hand covering both eyes, smiling with tongue sticking out">
-            </div>            
+                <img src="./assets/blog-image-2.jpg"
+                    alt="a blonde female with two side bun, wearing red sweater, holding half cut oranges per hand covering both eyes, smiling with tongue sticking out">
+            </div>
         </div>
     </header> <!-- END header -->
 
@@ -76,18 +80,23 @@
         <div class="wrapper">
             <section class="description">
                 <h3 class="descriptionTitle"> Who is Sophie?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem nobis tempore asperiores provident? Suscipit quod quisquam blanditiis explicabo hic expedita aut provident? Eum accusamus perferendis expedita sed qui quo?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem nobis tempore asperiores
+                    provident? Suscipit quod quisquam blanditiis explicabo hic expedita aut provident? Eum accusamus
+                    perferendis expedita sed qui quo?</p>
                 <button class="button">Find Out More</button>
             </section> <!-- END description section -->
 
-            <section class="hobbies">
+            <section class="hobbies" id="about">
                 <div class="favouriteSection">
                     <div class="favoriteImgContainer">
-                        <img src="./assets/home-image-2.jpg" alt="dirty brown haired dog wearing blue ribbon, looking out the window of a orange car">
+                        <img src="./assets/home-image-2.jpg"
+                            alt="dirty brown haired dog wearing blue ribbon, looking out the window of a orange car">
                     </div>
                     <div class="favoriteContent">
                         <h4 class="hobiesTitle">Sophie's favourite things</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque porro eos voluptatem. Quasi ipsam recusandae illo nostrum distinctio et sapiente, corporis libero sunt molestias ipsa error molestiae, ab provident!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque porro eos voluptatem.
+                            Quasi ipsam recusandae illo nostrum distinctio et sapiente, corporis libero sunt molestias
+                            ipsa error molestiae, ab provident!</p>
                         <button class="button">Read More</button>
                     </div>
                 </div> <!-- END hobby-favourite section -->
@@ -95,30 +104,35 @@
                 <div class="travelSection">
                     <div class="travelContent">
                         <h4 class="hobiesTitle">Where she's travelled</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, et debitis expedita tempore ipsum molestias assumenda dolorem cumque commodi reiciendis, blanditiis eius magni ipsa odio ad, minus doloremque sunt similique.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, et debitis expedita tempore
+                            ipsum molestias assumenda dolorem cumque commodi reiciendis, blanditiis eius magni ipsa odio
+                            ad, minus doloremque sunt similique.</p>
                         <button class="button">Read More</button>
                     </div>
                     <div class="travelmgContainer">
-                        <img src="./assets/home-image-3.jpg" alt="mutiple teal colored beach chairs on sand with orange parasols">
+                        <img src="./assets/home-image-3.jpg"
+                            alt="mutiple teal colored beach chairs on sand with orange parasols">
                     </div>
-                </div> <!-- END hobby-travel section -->                
+                </div> <!-- END hobby-travel section -->
             </section> <!-- END hobbies section -->
 
-            <section class="contactInfo">
+            <section class="contactInfo" id="contact">
                 <div class="photos">
                     <div class="photosTitle">
                         <i class="fa-solid fa-image"></i>
-                        <h5>Photos</h5>                                                
+                        <h5>Photos</h5>
                     </div>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandid nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandid nisi. Fusce auctor erat ac sagittis mattis.
+                        Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
 
                 <div class="blog">
                     <div class="blogTitle">
                         <i class="fa-solid fa-display"></i>
-                        <h5>Blog</h5>                        
+                        <h5>Blog</h5>
                     </div>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandid nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandid nisi. Fusce auctor erat ac sagittis mattis.
+                        Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
 
                 <div class="about">
@@ -126,7 +140,8 @@
                         <i class="fa-solid fa-user"></i>
                         <h5>About</h5>
                     </div>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandid nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandid nisi. Fusce auctor erat ac sagittis mattis.
+                        Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
 
                 <div class="phone">
@@ -134,36 +149,43 @@
                         <i class="fa-solid fa-phone-flip"></i>
                         <h5>Get in touch</h5>
                     </div>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandid nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandid nisi. Fusce auctor erat ac sagittis mattis.
+                        Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
             </section> <!-- END contactInfo section -->
 
-            <section class="journey">
+            <section class="journey" id="blog">
                 <div class="journeyTopImgContainer">
-                    <img src="./assets/home-image-4.jpg" alt="multiple orange leather chairs folded up side by side in a lecture room setting">
+                    <img src="./assets/home-image-4.jpg"
+                        alt="multiple orange leather chairs folded up side by side in a lecture room setting">
                 </div>
                 <div class="journeyContentContainer">
                     <div class="jouneyBottomImgContainer">
-                       <img src="./assets/home-image-5.jpg" alt="a brunette female hair tied up in a bun, wearing large glasses, with orange t-shirt, ripped light washed-up denmim, on top of a building,looking to the side"> 
-                    </div>     
+                        <img src="./assets/home-image-5.jpg"
+                            alt="a brunette female hair tied up in a bun, wearing large glasses, with orange t-shirt, ripped light washed-up denmim, on top of a building,looking to the side">
+                    </div>
                     <div class="journeyContent">
                         <h3 class="descriptionTitle">Sophie's Journey</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aut ipsum sequi, laborum cupiditate, reprehenderit similique nesciunt ea, eligendi architecto enim cum? Iure molestiae optio, velit eius modi voluptatem asperiores.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aut ipsum sequi, laborum
+                            cupiditate, reprehenderit similique nesciunt ea, eligendi architecto enim cum? Iure
+                            molestiae optio, velit eius modi voluptatem asperiores.</p>
                         <button class="button">Find Out More</button>
-                    </div>                                   
+                    </div>
                 </div>
             </section> <!-- END journey section -->
 
             <section class="imgGallery">
                 <div class="imgGalleryContainer">
                     <div class="img1">
-                        <img src="./assets/home-image-6.jpg" alt="front half of teal bike with a basket in front of a orange background wall">
+                        <img src="./assets/home-image-6.jpg"
+                            alt="front half of teal bike with a basket in front of a orange background wall">
                     </div>
                     <div class="img2">
                         <img src="./assets/home-image-7.jpg" alt="red orange colored building with tall windows">
                     </div>
                     <div class="img3">
-                        <img src="./assets/home-image-8.jpg" alt="close up photo of a orange parasol with banana beach logo">
+                        <img src="./assets/home-image-8.jpg"
+                            alt="close up photo of a orange parasol with banana beach logo">
                     </div>
                 </div>
             </section> <!-- END imgGallery section -->
@@ -176,4 +198,5 @@
         </div>
     </footer>
 </body>
+
 </html>
