@@ -530,13 +530,17 @@ header {
 }
 .hobbySection .hobby h4 {
   text-transform: uppercase;
+  margin-top: 0;
 }
 .hobbySection .hobby p {
   margin-top: 0;
 }
+.hobbySection .hobby .favoriteImgContainer {
+  width: 50%;
+  margin-bottom: 100px;
+}
 .hobbySection .hobby .favoriteImgContainer img {
-  width: 95%;
-  height: 350px;
+  height: 400px;
   -webkit-box-shadow: 18px 18px;
           box-shadow: 18px 18px;
   color: #a82706;
@@ -557,10 +561,63 @@ header {
   padding: 0 80px 70px 0;
 }
 .hobbySection .hobby .travelImgContainer {
-  width: 53%;
+  width: 50%;
 }
 .hobbySection .hobby .travelImgContainer img {
+  height: 400px;
   -webkit-box-shadow: 18px 18px;
           box-shadow: 18px 18px;
   color: #f6a823;
+  height: 350px;
+}
+
+.contact {
+  background-color: rgba(79, 79, 79, 0.1);
+  padding: 40px 0;
+}
+.contact .contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px 0;
+}
+.contact .contactInfo .content {
+  width: 50%;
+}
+.contact .contactInfo .content p {
+  margin-top: 0;
+  padding: 0 50px 40px 50px;
+}
+.contact .contactInfo .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .contactInfo .icon i {
+  background-color: #f6a823;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+}
+.contact .contactInfo .icon h5 {
+  color: #2c2c2c;
+  text-transform: uppercase;
 }
