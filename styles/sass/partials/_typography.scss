@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    @include fontSize(30);
+    @include fontSize(40);
     letter-spacing: 0;
     font-family: $primaryFont;
     text-transform: uppercase;
@@ -26,7 +26,7 @@ h1 {
 h2 {
     @include fontSize(42);
     letter-spacing: 1px;
-    font-family: $secondaryFont;
+    font-family: $primaryFont;
 }
 
 h3 {

@@ -255,8 +255,8 @@ body {
 }
 
 h1 {
-  font-size: 30px;
-  font-size: 1.5rem;
+  font-size: 40px;
+  font-size: 2rem;
   letter-spacing: 0;
   font-family: "Lora", "Bold", serif;
   text-transform: uppercase;
@@ -266,7 +266,7 @@ h2 {
   font-size: 42px;
   font-size: 2.1rem;
   letter-spacing: 1px;
-  font-family: "Roboto", "Bold", sans-serif;
+  font-family: "Lora", "Bold", serif;
 }
 
 h3 {
@@ -430,4 +430,61 @@ button {
 }
 .slideOutNav .menuClose :hover {
   color: #f0efed;
+}
+
+header {
+  background-color: #f6a823;
+  height: 700px;
+}
+
+#home .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+#home .wrapper .headingTitle {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 200px;
+}
+#home .wrapper .headingTitle .headingTitleContainer img {
+  width: 10%;
+  position: absolute;
+  top: 270px;
+  left: 310px;
+}
+#home .wrapper .headingTitle h2 {
+  font-size: 185px;
+  font-size: 9.25rem;
+  width: 100%;
+  display: relative;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0 0 0 50px;
+}
+#home .wrapper .headingImg {
+  width: 40%;
+  height: auto;
+}
+#home .wrapper .headingImg .headerImgContainer {
+  width: 100%;
+  -webkit-box-shadow: 18px 18px;
+          box-shadow: 18px 18px;
+  color: #f0efed;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+#home .wrapper .headingImg .headerImgContainer img {
+  height: 700px;
 }
