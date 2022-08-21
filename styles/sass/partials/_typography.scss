@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-    @include fontSize(35);
+    @include fontSize(40);
     letter-spacing: 1px;
     font-family: $secondaryFont;    
 }

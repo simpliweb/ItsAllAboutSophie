@@ -271,8 +271,8 @@ h2 {
 }
 
 h3 {
-  font-size: 35px;
-  font-size: 1.75rem;
+  font-size: 40px;
+  font-size: 2rem;
   letter-spacing: 1px;
   font-family: "Roboto", "Bold", sans-serif;
 }
@@ -468,19 +468,19 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 #home .wrapper .headingTitle .headingTitleContainer img {
-  width: 10%;
-  position: absolute;
-  top: 270px;
-  left: 310px;
+  width: 20%;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 #home .wrapper .headingTitle h2 {
   font-size: 185px;
   font-size: 9.25rem;
   width: 100%;
-  display: relative;
+  display: absolute;
   text-align: left;
   text-transform: uppercase;
   margin: 0 0 0 50px;
@@ -620,4 +620,59 @@ header {
 .contact .contactInfo .icon h5 {
   color: #2c2c2c;
   text-transform: uppercase;
+}
+
+.journey {
+  background-color: rgba(79, 79, 79, 0.1);
+}
+.journey .journeyTopImgContainer {
+  background-image: url("../assets/home-image-4.jpg");
+  height: 500px;
+}
+.journey .journeyContentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+}
+.journey .journeyContentContainer .journeyBottomImgContainer {
+  width: 30%;
+}
+.journey .journeyContentContainer .journeyBottomImgContainer img {
+  color: #f6a823;
+  -webkit-box-shadow: 18px 18px;
+          box-shadow: 18px 18px;
+}
+.journey .journeyContentContainer .journeyContent {
+  width: 70%;
+  padding-left: 100px;
+}
+.journey .journeyContentContainer .journeyContent h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.journey .journeyContentContainer .journeyContent p {
+  margin: 40px 0 80px;
+}
+
+.imgGalleryContainer {
+  padding: 90px 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.imgGalleryContainer .img1, .imgGalleryContainer .img2, .imgGalleryContainer .img3 {
+  width: 31.5%;
+}
+
+footer {
+  background-color: #2c2c2c;
+  padding: 1px;
+}
+footer .wrapper {
+  text-align: center;
+  color: #f0efed;
 }

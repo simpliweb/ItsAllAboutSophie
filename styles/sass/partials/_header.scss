@@ -14,19 +14,19 @@ header {
                 width: 58%;
                 display: flex;
                 flex-direction: column;    
-                padding-top: 200px;
+                padding-top: 150px;
 
                 .headingTitleContainer img {             
-                    width: 10%;
-                    position: absolute;
-                    top: 270px;
-                    left: 310px;                                  
+                    width: 20%;
+                    position: relative;
+                    top: 0;
+                    left: 0;                                  
                 }
 
                 h2 {
                     @include fontSize(185);                    
                     width: 100%;
-                    display: relative;
+                    display: absolute;
                     text-align: left;                    
                     text-transform: uppercase;
                     margin: 0 0 0 50px;

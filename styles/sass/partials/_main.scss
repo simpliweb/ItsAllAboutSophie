@@ -114,3 +114,60 @@
         }
     }
 } // END .contact section
+
+.journey {
+    background-color: rgba($color: $senary, $alpha: 0.1);
+
+    .journeyTopImgContainer {
+        background-image: url("../assets/home-image-4.jpg");
+        height: 500px;
+    }
+
+    .journeyContentContainer {
+        display: flex;
+        padding: 100px 0;
+
+        .journeyBottomImgContainer {
+            width: 30%;
+
+            img {
+                color: $primary;
+                box-shadow: 18px 18px;
+            }
+        }
+
+        .journeyContent {
+            width: 70%;
+            padding-left: 100px;
+
+            h3 {
+                margin-top: 0;
+                text-transform: uppercase;
+            }
+
+            p {
+                margin: 40px 0 80px;
+            }
+        }
+    }
+} // END .journey section
+
+.imgGalleryContainer {
+    padding: 90px 0 100px;
+    display: flex;
+    justify-content: space-between;
+
+    .img1, .img2, .img3 {
+        width: 31.5%;
+    }
+} // END .imgGallery section
+
+footer {    
+    background-color: $secondary;
+    padding: 1px;
+
+        .wrapper {
+            text-align: center;
+            color: $tertiary;
+        }
+} // END footer
