@@ -31,13 +31,13 @@ h2 {
 }
 
 h3 {
-    @include fontSize(32);
+    @include fontSize(35);
     letter-spacing: 1px;
     font-family: $secondaryFont;    
 }
 
 h4 {
-    @include fontSize(24);
+    @include fontSize(30);
     letter-spacing: 1px;
     font-family: $secondaryFont;
 }
@@ -60,6 +60,11 @@ button {
     letter-spacing: 0;
     line-height: 32px;
     font-family: $secondaryFont;
+}
+
+p {
+    @include fontSize(25);
+    line-height: 32px;
 }
 
 

@@ -23,5 +23,11 @@ button {
 }
 
 .button {
-    background-color: $tertiary;
+    background-color: $quaternary;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
 }

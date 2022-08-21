@@ -1,0 +1,68 @@
+.description {
+    background-color: rgba($color: $senary, $alpha: 0.1);
+    padding: 50px 50px 100px 50px;
+    position: relative;
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    p {
+        padding-right: 150px;
+    }
+} // END descrpition section
+
+.hobbySection {
+
+    .hobby {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-evenly;        
+        
+        .item {
+            width: 50%;           
+        }
+
+        h4 {
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        .favoriteImgContainer {
+            img {
+                width: 95%;
+                height: 350px;
+                box-shadow: 18px 18px;
+                color: $quinary;
+                z-index: 2;
+            }   
+        }
+
+        .favoriteContent {
+            padding: 45px 0 70px 100px;
+            align-items: center;
+
+            h4, p {
+                text-align: left;
+            }
+        }
+        
+        .travelContent {
+            width: 47%;
+            text-align: right;
+            padding: 0 80px 70px 0;
+        }
+
+        .travelImgContainer {
+            width: 53%;
+            img {
+                box-shadow: 18px 18px;
+                color: $primary;
+            }
+        }
+    }
+} // END .hobby section
+

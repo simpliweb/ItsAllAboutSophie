@@ -271,15 +271,15 @@ h2 {
 }
 
 h3 {
-  font-size: 32px;
-  font-size: 1.6rem;
+  font-size: 35px;
+  font-size: 1.75rem;
   letter-spacing: 1px;
   font-family: "Roboto", "Bold", sans-serif;
 }
 
 h4 {
-  font-size: 24px;
-  font-size: 1.2rem;
+  font-size: 30px;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   font-family: "Roboto", "Bold", sans-serif;
 }
@@ -307,6 +307,12 @@ button {
   font-family: "Roboto", "Bold", sans-serif;
 }
 
+p {
+  font-size: 25px;
+  font-size: 1.25rem;
+  line-height: 32px;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 90%;
@@ -332,7 +338,13 @@ button {
 }
 
 .button {
-  background-color: #f0efed;
+  background-color: #05afc1;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 .navBar {
@@ -448,7 +460,7 @@ header {
   padding-top: 50px;
 }
 #home .wrapper .headingTitle {
-  width: 60%;
+  width: 58%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,8 +486,9 @@ header {
   margin: 0 0 0 50px;
 }
 #home .wrapper .headingImg {
-  width: 40%;
+  width: 42%;
   height: auto;
+  z-index: 2;
 }
 #home .wrapper .headingImg .headerImgContainer {
   width: 100%;
@@ -488,4 +501,66 @@ header {
 }
 #home .wrapper .headingImg .headerImgContainer img {
   height: 700px;
+}
+
+.description {
+  background-color: rgba(79, 79, 79, 0.1);
+  padding: 50px 50px 100px 50px;
+  position: relative;
+}
+.description h3 {
+  text-transform: uppercase;
+}
+.description p {
+  padding-right: 150px;
+}
+
+.hobbySection .hobby {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.hobbySection .hobby .item {
+  width: 50%;
+}
+.hobbySection .hobby h4 {
+  text-transform: uppercase;
+}
+.hobbySection .hobby p {
+  margin-top: 0;
+}
+.hobbySection .hobby .favoriteImgContainer img {
+  width: 95%;
+  height: 350px;
+  -webkit-box-shadow: 18px 18px;
+          box-shadow: 18px 18px;
+  color: #a82706;
+  z-index: 2;
+}
+.hobbySection .hobby .favoriteContent {
+  padding: 45px 0 70px 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hobbySection .hobby .favoriteContent h4, .hobbySection .hobby .favoriteContent p {
+  text-align: left;
+}
+.hobbySection .hobby .travelContent {
+  width: 47%;
+  text-align: right;
+  padding: 0 80px 70px 0;
+}
+.hobbySection .hobby .travelImgContainer {
+  width: 53%;
+}
+.hobbySection .hobby .travelImgContainer img {
+  -webkit-box-shadow: 18px 18px;
+          box-shadow: 18px 18px;
+  color: #f6a823;
 }
