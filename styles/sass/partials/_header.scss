@@ -1,50 +1,52 @@
-header {
-    background-color: $primary;
-    height: 700px;
-}
-
 #home {
+    background-color: $primary;
+    height: 600px;
 
     .wrapper {        
         display: flex;
         justify-content: space-between;    
-        padding-top: 50px;
+        padding-top: 40px;
 
             .headingTitle {
                 width: 60%;
                 display: flex;
                 flex-direction: column;    
-                padding-top: 150px;
+                margin-top: 150px;
                 position: relative;
 
                 .headingTitleContainer img {             
-                    width: 24%;
+                    width: 22%;
                     position: absolute;
                     left: 0;
-                    top: 100px;
+                    top: -40px;
                 }
 
                 h2 {
-                    @include fontSize(180);                    
+                    @include fontSize(170);                    
                     width: 100%;
                     position: absolute;
                     text-align: left;                    
                     text-transform: uppercase;
-                    margin: 0 0 0 70px;
+                    margin: 0 0 0 50px;
                 }                
             }
 
             .headingImg {
                 width: 42%;
                 height: auto;
+                position: relative;
+                
 
-                .headerImgContainer {
+                .headerImgContainer {                    
                     width: 100%;  
-                    box-shadow: 18px 18px;
-                    color: $tertiary;
                     align-items: left;
+                    position: absolute;
+                    z-index: 2;
                         img {               
                             height: 700px;
+                            border: transparent;
+                            box-shadow: 18px 18px;
+                            color: $tertiary;
                         }
 
                 }

@@ -1,6 +1,18 @@
+.navBar {
+    #contact {
+        color: $tertiary;
+
+        &:hover,
+        &:focus {
+            color: $secondary;
+        }
+    }
+} // END navbar 
+
 header {
     height: 500px;
 }
+
 .contactHeader {
     background-color: rgba($color: $senary, $alpha: 0.1);
 
@@ -20,6 +32,13 @@ header {
         @include fontSize(100);
         position: absolute;
         margin-top: 0;
+
+        &:hover,
+        &:focus {
+            transform: rotateY(360deg);
+            transition: 3s;
+            cursor: pointer;
+        }
     }
 }
 
@@ -51,6 +70,14 @@ header {
                         @include fontSize(35);
                         color: $primary;
                         margin-right: 20px;
+
+                        &:hover,
+                        &:focus {
+                            @include fontSize(45);
+                            color: $quaternary;
+                            cursor: pointer;
+                            transition: 0.3s;
+                        }
                     }
                 }            
 
@@ -90,7 +117,7 @@ header {
             resize: none;
         }
         
-        .button { 
+        .contactButton { 
             @include fontSize(30);
             width: 100%;
             margin: 20px 0 50px;

@@ -264,8 +264,8 @@ h1 {
 }
 
 h2 {
-  font-size: 42px;
-  font-size: 2.1rem;
+  font-size: 25px;
+  font-size: 1.25rem;
   letter-spacing: 1px;
   font-family: "Lora", "Bold", serif;
 }
@@ -329,29 +329,61 @@ img {
   width: 100%;
   display: block;
 }
-
-button {
-  background-color: transparent;
-  border: none;
-  padding: 10px 15px;
+img:hover, img:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.5;
   cursor: pointer;
 }
 
-.button {
+button {
+  border: none;
+  padding: 15px 20px;
   background-color: #05afc1;
   font-weight: bold;
   text-transform: uppercase;
-  border: none;
-  padding: 10px 15px;
   margin-top: 15px;
   cursor: pointer;
 }
+button:hover, button:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #2c2c2c;
+  color: #05afc1;
+}
 
+p {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Firefox < 16 */
+  /* Internet Explorer */
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .navBar {
   background-color: #f6a823;
   position: sticky;
   top: 0;
   z-index: 10;
+  padding: 10px 0 10px;
 }
 .navBar .mainMenu {
   display: -webkit-box;
@@ -367,12 +399,6 @@ button {
 .navBar .mainMenu li {
   text-transform: uppercase;
 }
-.navBar .mainMenu li #firstA {
-  color: #f0efed;
-}
-.navBar .mainMenu li #firstA:hover, .navBar .mainMenu li #firstA:focus {
-  color: #2c2c2c;
-}
 .navBar .mainMenu li a {
   text-decoration: none;
   color: #2c2c2c;
@@ -384,14 +410,12 @@ button {
 .navBar .mainMenu li a:hover, .navBar .mainMenu li a:focus {
   color: #f0efed;
 }
+.navBar .mainMenu li .logo {
+  list-style: none;
+}
 .navBar .mainMenu h1 {
   padding-bottom: 3px;
   margin: 0 25px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.navBar .mainMenu h1:hover, .navBar .mainMenu h1:focus {
-  color: #f0efed;
 }
 
 .menuOpen {
@@ -449,11 +473,10 @@ button {
   color: #f0efed;
 }
 
-header {
+#home {
   background-color: #f6a823;
-  height: 700px;
+  height: 600px;
 }
-
 #home .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -461,7 +484,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 #home .wrapper .headingTitle {
   width: 60%;
@@ -472,46 +495,56 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 150px;
+  margin-top: 150px;
   position: relative;
 }
 #home .wrapper .headingTitle .headingTitleContainer img {
-  width: 24%;
+  width: 22%;
   position: absolute;
   left: 0;
-  top: 100px;
+  top: -40px;
 }
 #home .wrapper .headingTitle h2 {
-  font-size: 180px;
-  font-size: 9rem;
+  font-size: 170px;
+  font-size: 8.5rem;
   width: 100%;
   position: absolute;
   text-align: left;
   text-transform: uppercase;
-  margin: 0 0 0 70px;
+  margin: 0 0 0 50px;
 }
 #home .wrapper .headingImg {
   width: 42%;
   height: auto;
+  position: relative;
 }
 #home .wrapper .headingImg .headerImgContainer {
   width: 100%;
-  -webkit-box-shadow: 18px 18px;
-          box-shadow: 18px 18px;
-  color: #f0efed;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
+  position: absolute;
+  z-index: 2;
 }
 #home .wrapper .headingImg .headerImgContainer img {
   height: 700px;
+  border: transparent;
+  -webkit-box-shadow: 18px 18px;
+          box-shadow: 18px 18px;
+  color: #f0efed;
+}
+
+.navBar #home {
+  color: #f0efed;
+}
+.navBar #home:hover, .navBar #home:focus {
+  color: #2c2c2c;
 }
 
 .description {
   background-color: rgba(79, 79, 79, 0.1);
-  padding: 70px 50px 150px 50px;
+  padding: 120px 50px 160px 50px;
   position: relative;
-  z-index: -1;
 }
 .description h3 {
   text-transform: uppercase;
@@ -648,6 +681,14 @@ header {
           align-items: center;
   margin-right: 15px;
 }
+.contact .contactInfo .icon i:hover, .contact .contactInfo .icon i:focus {
+  font-size: 30px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .contact .contactInfo .icon h5 {
   color: #2c2c2c;
   text-transform: uppercase;
@@ -695,6 +736,10 @@ header {
 .imgGalleryContainer .img1, .imgGalleryContainer .img2, .imgGalleryContainer .img3 {
   width: 31.5%;
 }
+.imgGalleryContainer .img1:hover, .imgGalleryContainer .img1:focus, .imgGalleryContainer .img2:hover, .imgGalleryContainer .img2:focus, .imgGalleryContainer .img3:hover, .imgGalleryContainer .img3:focus {
+  -webkit-box-shadow: 18px 18px 10px;
+          box-shadow: 18px 18px 10px;
+}
 
 footer {
   background-color: #2c2c2c;
@@ -703,6 +748,13 @@ footer {
 footer .wrapper {
   text-align: center;
   color: #f0efed;
+}
+
+.navBar #contact {
+  color: #f0efed;
+}
+.navBar #contact:hover, .navBar #contact:focus {
+  color: #2c2c2c;
 }
 
 header {
@@ -727,6 +779,13 @@ header {
   font-size: 5rem;
   position: absolute;
   margin-top: 0;
+}
+.contactHeader .contactTitle:hover, .contactHeader .contactTitle:focus {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition: 3s;
+  transition: 3s;
+  cursor: pointer;
 }
 
 .contactMain {
@@ -766,6 +825,14 @@ header {
   color: #f6a823;
   margin-right: 20px;
 }
+.contactMain .wrapper .contactContainer .contactDetails .socialLinks i:hover, .contactMain .wrapper .contactContainer .contactDetails .socialLinks i:focus {
+  font-size: 45px;
+  font-size: 2.25rem;
+  color: #05afc1;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .contactMain .wrapper .contactContainer .contactDetails span {
   font-weight: bold;
 }
@@ -801,7 +868,7 @@ header {
   padding: 40px 0 20px 30px;
   resize: none;
 }
-.contactMain .contactForm .button {
+.contactMain .contactForm .contactButton {
   font-size: 30px;
   font-size: 1.5rem;
   width: 100%;

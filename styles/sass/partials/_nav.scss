@@ -3,6 +3,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
+    padding: 10px 0 10px;
 
     .mainMenu {
         display: flex;
@@ -11,18 +12,8 @@
 
         li {
             text-transform: uppercase;
-
-
-            #firstA {
-                color: $tertiary;
-
-                &:hover,
-                &:focus {
-                    color: $secondary;
-                }
-            }
-            
-	    a {
+        
+	        a {
                 text-decoration: none;
                 color: $secondary;
                 font-weight: bold;
@@ -35,17 +26,15 @@
                 }
 
             }
+
+            .logo {
+                list-style: none;
+            }
         }
 
         h1 {
             padding-bottom: 3px;
             margin: 0 25px;
-            transition: 0.3s;
-
-            &:hover,
-            &:focus {
-                color: $tertiary;
-            }
         }
     }
 }
