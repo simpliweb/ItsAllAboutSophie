@@ -741,14 +741,13 @@ header {
           justify-content: space-between;
 }
 .contactMain .wrapper .contactContainer {
-  width: 20%;
+  width: 33%;
   background-color: white;
-  width: 450px;
   height: 320px;
 }
 .contactMain .wrapper .contactContainer .contactDetails {
-  font-size: 30px;
-  font-size: 1.5rem;
+  font-size: 25px;
+  font-size: 1.25rem;
   padding: 40px 10px 60px 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -777,14 +776,12 @@ header {
   font-size: 30px;
   font-size: 1.5rem;
   margin: 0 0 50px 50px;
-  width: 75%;
+  width: 67%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
-.contactMain .contactForm .inside {
+.contactMain .contactForm .separateSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,17 +791,19 @@ header {
 }
 .contactMain .contactForm input {
   margin-bottom: 20px;
-  padding: 20px 5px 20px 15px;
+  padding: 20px 30px;
   border: transparent;
   width: 49%;
 }
 .contactMain .contactForm textarea {
   width: 100%;
   border: transparent;
-  padding: 40px 0 20px 20px;
+  padding: 40px 0 20px 30px;
+  resize: none;
 }
 .contactMain .contactForm .button {
   font-size: 30px;
   font-size: 1.5rem;
   width: 100%;
+  margin: 20px 0 50px;
 }
