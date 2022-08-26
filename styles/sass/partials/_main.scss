@@ -1,7 +1,8 @@
-.description {
+.description {    
     background-color: rgba($color: $senary, $alpha: 0.1);
-    padding: 50px 50px 100px 50px;
+    padding: 70px 50px 150px 50px;
     position: relative;
+    z-index: -1;
 
     h3 {
         text-transform: uppercase;
@@ -9,6 +10,7 @@
 
     p {
         padding-right: 150px;
+        width: 90%;
     }
 } // END descrpition section
 
@@ -33,40 +35,67 @@
         }
 
         .favoriteImgContainer {
-            width: 50%;
+            display: flex;
+            background-color: $quinary;
             margin-bottom: 100px;
+            margin-top: -40px;
+            height: 370px;
+            position: relative;
 
             img {                
-                height: 400px;
-                box-shadow: 18px 18px;
-                color: $quinary;
-                z-index: 2;
+                height: 370px;
+                width: 68%;
+                padding-right: 20px;
+                margin-top: -20px;    
+                margin-left: auto;      
+                position: relative;   
             }   
         }
 
         .favoriteContent {
-            padding: 45px 0 70px 100px;
+            padding: 90px 0 0 80px;
             align-items: center;
+
+            .innerContent {
+                width: 63%;
+            }
 
             h4, p {
                 text-align: left;
             }
+            
+            h4 {
+                margin-bottom: 15px;
+            }
         }
         
         .travelContent {
-            width: 47%;
+            margin-top: -20px;
             text-align: right;
-            padding: 0 80px 70px 0;
+            padding: 0 70px 70px 100px;
+
+            h4 {
+                margin-bottom: 15px;
+            }
+            p {
+                padding-left: 220px;
+            }
+
+            .button {
+                margin-top: 10px;
+            }
         }
 
         .travelImgContainer {
             width: 50%;
+            background-color: $primary;
+            height: 370px;
 
             img {
-                height: 400px;
-                box-shadow: 18px 18px;
-                color: $primary;
-                height: 350px;
+                height: 370px;
+                width: 68%;
+                margin-top: -20px;
+                margin-left: -20px;
             }
         }
     }
@@ -74,6 +103,7 @@
 
 
 .contact {
+    margin-top: -40px;
     background-color: rgba($color: $senary, $alpha: 0.1);
     padding: 40px 0;
 
@@ -98,6 +128,7 @@
             
             i {
                 background-color: $primary;
+                padding-left: 3px;
                 width: 35px;
                 height: 35px;
                 border-radius: 50%;
@@ -128,7 +159,7 @@
         padding: 100px 0;
 
         .journeyBottomImgContainer {
-            width: 30%;
+            width: 22%;
 
             img {
                 color: $primary;
@@ -137,17 +168,13 @@
         }
 
         .journeyContent {
-            width: 70%;
+            width: 78%;
             padding-left: 100px;
 
             h3 {
                 margin-top: 0;
                 text-transform: uppercase;
-            }
-
-            p {
-                margin: 40px 0 80px;
-            }
+            }            
         }
     }
 } // END .journey section

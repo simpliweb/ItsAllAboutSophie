@@ -1,0 +1,98 @@
+header {
+    height: 500px;
+}
+.contactHeader {
+    background-color: rgba($color: $senary, $alpha: 0.1);
+
+    .contactImgContainer {
+        background-image: url("../assets/contact-image-1.jpg");
+        background-position: center;
+        height: 400px;
+        position: relative;
+    }
+
+    .wrapper {
+        margin-top: -50px;
+    }
+    
+    .contactTitle {            
+        text-transform: uppercase;
+        @include fontSize(100);
+        position: absolute;
+        margin-top: 0;
+    }
+}
+
+.contactMain {
+    background-color: rgba($color: $senary, $alpha: 0.1);
+    // margin-top: -100px;
+    
+    .wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+        .contactContainer {
+            width: 20%;
+            background-color: white;
+            width: 450px;
+            height: 320px;
+
+            .contactDetails {
+                @include fontSize(30);
+                padding: 40px 10px 60px 30px;
+                justify-content: center;
+                line-height: 30px;
+                
+
+                .socialLinks {
+                    display: flex;
+                    margin-bottom: 15px;
+
+                    i {
+                        @include fontSize(35);
+                        color: $primary;
+                        margin-right: 20px;
+                    }
+                }            
+
+                span {
+                    font-weight: bold;
+                }
+
+                .address {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    .contactForm {
+        @include fontSize(30);
+        margin: 0 0 50px 50px;
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .inside {
+            display: flex;
+            justify-content: space-between;
+        }
+        input {
+            margin-bottom: 20px;
+            padding: 20px 5px 20px 15px;
+            border: transparent;
+            width: 49%;
+        }
+
+        textarea {
+            width: 100%;
+            border: transparent;
+            padding: 40px 0 20px 20px;
+        }
+        
+        .button { 
+            @include fontSize(30);
+            width: 100%;
+        }
+    }
+}

@@ -285,8 +285,8 @@ h4 {
 }
 
 h5 {
-  font-size: 24px;
-  font-size: 1.2rem;
+  font-size: 30px;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   color: #f0efed;
   font-family: "Roboto", "Bold", sans-serif;
@@ -423,7 +423,7 @@ button {
   margin: 0;
   font-family: inherit;
 }
-.slideOutNav li :hover {
+.slideOutNav li:hover, .slideOutNav li:focus {
   color: #05afc1;
 }
 .slideOutNav .menuOpen {
@@ -438,10 +438,14 @@ button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.slideOutNav .menuClose span {
+.slideOutNav .slideOutMenu span {
   display: none;
 }
-.slideOutNav .menuClose :hover {
+.slideOutNav .slideOutMenu a {
+  color: black;
+  text-decoration: none;
+}
+.slideOutNav .slideOutMenu a:hover, .slideOutNav .slideOutMenu a:focus {
   color: #f0efed;
 }
 
@@ -460,7 +464,7 @@ header {
   padding-top: 50px;
 }
 #home .wrapper .headingTitle {
-  width: 58%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,26 +473,26 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 150px;
+  position: relative;
 }
 #home .wrapper .headingTitle .headingTitleContainer img {
-  width: 20%;
-  position: relative;
-  top: 0;
+  width: 24%;
+  position: absolute;
   left: 0;
+  top: 100px;
 }
 #home .wrapper .headingTitle h2 {
-  font-size: 185px;
-  font-size: 9.25rem;
+  font-size: 180px;
+  font-size: 9rem;
   width: 100%;
-  display: absolute;
+  position: absolute;
   text-align: left;
   text-transform: uppercase;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 70px;
 }
 #home .wrapper .headingImg {
   width: 42%;
   height: auto;
-  z-index: 2;
 }
 #home .wrapper .headingImg .headerImgContainer {
   width: 100%;
@@ -505,14 +509,16 @@ header {
 
 .description {
   background-color: rgba(79, 79, 79, 0.1);
-  padding: 50px 50px 100px 50px;
+  padding: 70px 50px 150px 50px;
   position: relative;
+  z-index: -1;
 }
 .description h3 {
   text-transform: uppercase;
 }
 .description p {
   padding-right: 150px;
+  width: 90%;
 }
 
 .hobbySection .hobby {
@@ -536,42 +542,66 @@ header {
   margin-top: 0;
 }
 .hobbySection .hobby .favoriteImgContainer {
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #a82706;
   margin-bottom: 100px;
+  margin-top: -40px;
+  height: 370px;
+  position: relative;
 }
 .hobbySection .hobby .favoriteImgContainer img {
-  height: 400px;
-  -webkit-box-shadow: 18px 18px;
-          box-shadow: 18px 18px;
-  color: #a82706;
-  z-index: 2;
+  height: 370px;
+  width: 68%;
+  padding-right: 20px;
+  margin-top: -20px;
+  margin-left: auto;
+  position: relative;
 }
 .hobbySection .hobby .favoriteContent {
-  padding: 45px 0 70px 100px;
+  padding: 90px 0 0 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+.hobbySection .hobby .favoriteContent .innerContent {
+  width: 63%;
+}
 .hobbySection .hobby .favoriteContent h4, .hobbySection .hobby .favoriteContent p {
   text-align: left;
 }
+.hobbySection .hobby .favoriteContent h4 {
+  margin-bottom: 15px;
+}
 .hobbySection .hobby .travelContent {
-  width: 47%;
+  margin-top: -20px;
   text-align: right;
-  padding: 0 80px 70px 0;
+  padding: 0 70px 70px 100px;
+}
+.hobbySection .hobby .travelContent h4 {
+  margin-bottom: 15px;
+}
+.hobbySection .hobby .travelContent p {
+  padding-left: 220px;
+}
+.hobbySection .hobby .travelContent .button {
+  margin-top: 10px;
 }
 .hobbySection .hobby .travelImgContainer {
   width: 50%;
+  background-color: #f6a823;
+  height: 370px;
 }
 .hobbySection .hobby .travelImgContainer img {
-  height: 400px;
-  -webkit-box-shadow: 18px 18px;
-          box-shadow: 18px 18px;
-  color: #f6a823;
-  height: 350px;
+  height: 370px;
+  width: 68%;
+  margin-top: -20px;
+  margin-left: -20px;
 }
 
 .contact {
+  margin-top: -40px;
   background-color: rgba(79, 79, 79, 0.1);
   padding: 40px 0;
 }
@@ -603,6 +633,7 @@ header {
 }
 .contact .contactInfo .icon i {
   background-color: #f6a823;
+  padding-left: 3px;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -636,7 +667,7 @@ header {
   padding: 100px 0;
 }
 .journey .journeyContentContainer .journeyBottomImgContainer {
-  width: 30%;
+  width: 22%;
 }
 .journey .journeyContentContainer .journeyBottomImgContainer img {
   color: #f6a823;
@@ -644,15 +675,12 @@ header {
           box-shadow: 18px 18px;
 }
 .journey .journeyContentContainer .journeyContent {
-  width: 70%;
+  width: 78%;
   padding-left: 100px;
 }
 .journey .journeyContentContainer .journeyContent h3 {
   margin-top: 0;
   text-transform: uppercase;
-}
-.journey .journeyContentContainer .journeyContent p {
-  margin: 40px 0 80px;
 }
 
 .imgGalleryContainer {
@@ -675,4 +703,108 @@ footer {
 footer .wrapper {
   text-align: center;
   color: #f0efed;
+}
+
+header {
+  height: 500px;
+}
+
+.contactHeader {
+  background-color: rgba(79, 79, 79, 0.1);
+}
+.contactHeader .contactImgContainer {
+  background-image: url("../assets/contact-image-1.jpg");
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+.contactHeader .wrapper {
+  margin-top: -50px;
+}
+.contactHeader .contactTitle {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-size: 5rem;
+  position: absolute;
+  margin-top: 0;
+}
+
+.contactMain {
+  background-color: rgba(79, 79, 79, 0.1);
+}
+.contactMain .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactMain .wrapper .contactContainer {
+  width: 20%;
+  background-color: white;
+  width: 450px;
+  height: 320px;
+}
+.contactMain .wrapper .contactContainer .contactDetails {
+  font-size: 30px;
+  font-size: 1.5rem;
+  padding: 40px 10px 60px 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 30px;
+}
+.contactMain .wrapper .contactContainer .contactDetails .socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+.contactMain .wrapper .contactContainer .contactDetails .socialLinks i {
+  font-size: 35px;
+  font-size: 1.75rem;
+  color: #f6a823;
+  margin-right: 20px;
+}
+.contactMain .wrapper .contactContainer .contactDetails span {
+  font-weight: bold;
+}
+.contactMain .wrapper .contactContainer .contactDetails .address {
+  margin-top: 15px;
+}
+.contactMain .contactForm {
+  font-size: 30px;
+  font-size: 1.5rem;
+  margin: 0 0 50px 50px;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contactMain .contactForm .inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactMain .contactForm input {
+  margin-bottom: 20px;
+  padding: 20px 5px 20px 15px;
+  border: transparent;
+  width: 49%;
+}
+.contactMain .contactForm textarea {
+  width: 100%;
+  border: transparent;
+  padding: 40px 0 20px 20px;
+}
+.contactMain .contactForm .button {
+  font-size: 30px;
+  font-size: 1.5rem;
+  width: 100%;
 }

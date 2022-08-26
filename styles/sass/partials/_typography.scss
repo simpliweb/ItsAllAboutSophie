@@ -43,7 +43,7 @@ h4 {
 }
 
 h5 {
-    @include fontSize(24);
+    @include fontSize(30);
     letter-spacing: 1px;
     color: $tertiary;
     font-family: $secondaryFont;

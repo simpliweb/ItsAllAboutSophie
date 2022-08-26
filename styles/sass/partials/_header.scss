@@ -11,32 +11,32 @@ header {
         padding-top: 50px;
 
             .headingTitle {
-                width: 58%;
+                width: 60%;
                 display: flex;
                 flex-direction: column;    
                 padding-top: 150px;
+                position: relative;
 
                 .headingTitleContainer img {             
-                    width: 20%;
-                    position: relative;
-                    top: 0;
-                    left: 0;                                  
+                    width: 24%;
+                    position: absolute;
+                    left: 0;
+                    top: 100px;
                 }
 
                 h2 {
-                    @include fontSize(185);                    
+                    @include fontSize(180);                    
                     width: 100%;
-                    display: absolute;
+                    position: absolute;
                     text-align: left;                    
                     text-transform: uppercase;
-                    margin: 0 0 0 50px;
+                    margin: 0 0 0 70px;
                 }                
             }
 
             .headingImg {
                 width: 42%;
                 height: auto;
-                z-index: 2;
 
                 .headerImgContainer {
                     width: 100%;  
