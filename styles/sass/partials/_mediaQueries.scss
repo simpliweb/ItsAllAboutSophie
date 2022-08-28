@@ -1,0 +1,12 @@
+@media (max-width: 1131px) {
+    // home 
+    .hobbySection {
+        display: flex;
+        flex-direction: column;    
+
+        .favoriteImgContainer {
+            background-color: none;
+            margin: 0;
+        }       
+    }
+}

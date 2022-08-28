@@ -311,6 +311,11 @@ p {
   font-size: 25px;
   font-size: 1.25rem;
   line-height: 32px;
+  letter-spacing: 0;
+}
+
+a {
+  letter-spacing: 0;
 }
 
 .wrapper {
@@ -862,16 +867,273 @@ header {
   padding: 20px 30px;
   border: transparent;
   width: 49%;
+  font-style: italic;
 }
 .contactMain .contactForm textarea {
   width: 100%;
   border: transparent;
   padding: 40px 0 20px 30px;
   resize: none;
+  font-style: italic;
 }
 .contactMain .contactForm .contactButton {
   font-size: 30px;
   font-size: 1.5rem;
   width: 100%;
   margin: 20px 0 50px;
+}
+
+.navBar #blog {
+  color: #f0efed;
+}
+.navBar #blog:hover, .navBar #blog:focus {
+  color: #2c2c2c;
+}
+
+.blogHeading {
+  margin-top: -200px;
+}
+.blogHeading h2 {
+  font-size: 100px;
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-size: 5rem;
+  position: absolute;
+  margin-top: 0;
+}
+.blogHeading h2:hover, .blogHeading h2:focus {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition: 3s;
+  transition: 3s;
+  cursor: pointer;
+}
+
+.headerImgContainer img {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+.blogContent {
+  background-color: #f0efed;
+}
+.blogContent .wrapper {
+  padding: 200px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogContent .wrapper .sophieInfo {
+  width: 40%;
+}
+.blogContent .wrapper .sophieInfo .sophiePhotoContainer {
+  width: 100%;
+  background-color: white;
+  width: 80%;
+  padding: 35px 0 20px 40px;
+  margin-bottom: 30px;
+}
+.blogContent .wrapper .sophieInfo .sophiePhotoContainer .sophiePhoto {
+  width: 55%;
+}
+.blogContent .wrapper .sophieInfo .sophiePhotoContainer .sophiePhoto .sophieImgContainer {
+  width: 100%;
+}
+.blogContent .wrapper .sophieInfo .sophiePhotoContainer .sophiePhoto .sophieImgContainer img {
+  width: 160%;
+  height: 400px;
+}
+.blogContent .wrapper .sophieInfo .sophieSummary h4 {
+  text-transform: uppercase;
+}
+.blogContent .wrapper .sophieInfo .sophieSummary p {
+  width: 100%;
+}
+.blogContent .wrapper .sophieInfo .sophieSummary p a {
+  color: #285e64;
+  font-weight: bold;
+  text-decoration: none;
+}
+.blogContent .wrapper .sophieInfo .recentPost {
+  background-color: white;
+  width: 80%;
+  padding: 10px 20px 30px 30px;
+}
+.blogContent .wrapper .sophieInfo .recentPost h4 {
+  text-transform: uppercase;
+}
+.blogContent .wrapper .sophieInfo .recentPost ul {
+  font-size: 25px;
+  font-size: 1.25rem;
+  line-height: 32px;
+  margin-left: 20px;
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Firefox < 16 */
+  /* Internet Explorer */
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.blogContent .wrapper .sophieInfo .recentPost ul li {
+  margin-left: 15px;
+  list-style-type: disc;
+  color: #f6a823;
+}
+.blogContent .wrapper .sophieInfo .recentPost ul li a {
+  margin-left: 15px;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+.blogContent .wrapper .sophieInfo .recentPost ul li a:hover, .blogContent .wrapper .sophieInfo .recentPost ul li a:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 700;
+  color: #05afc1;
+}
+.blogContent .wrapper .sophieStory {
+  width: 60%;
+}
+.blogContent .wrapper .sophieStory .sophieFullBlog {
+  background-color: white;
+  padding: 40px;
+}
+.blogContent .wrapper .sophieStory .sophieFullBlog h3 {
+  font-size: 48px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.blogContent .wrapper .sophieStory .sophieFullBlog .sophieStorySubtitle {
+  font-size: 25px;
+  font-size: 1.25rem;
+  color: inherit;
+  font-weight: normal;
+  font-style: italic;
+}
+.blogContent .wrapper .sophieStory .sophieFullBlog .sophieStorySubtitle li {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+.blogContent .wrapper .sophieStory .sophieFullBlog .sophieStorySubtitle li a {
+  color: #285e64;
+  font-weight: bold;
+  text-decoration: none;
+}
+.blogContent .wrapper .sophieStory hr {
+  border: 4px solid #f6a823;
+  margin: 0;
+}
+.blogContent .wrapper .sophieStory .sophieStoryBottomFirst {
+  margin-top: 40px;
+  padding: 40px 10px 10px;
+  background-color: white;
+}
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond {
+  margin: 20px 0 0;
+  padding: 40px 10px 10px;
+  background-color: white;
+}
+.blogContent .wrapper .sophieStory .sophieStoryBottomFirst,
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogContent .wrapper .sophieStory .sophieStoryBottomFirst .sophieStoryBottomFirstImg,
+.blogContent .wrapper .sophieStory .sophieStoryBottomFirst .sophieStoryBottomSecondImg,
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond .sophieStoryBottomFirstImg,
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond .sophieStoryBottomSecondImg {
+  width: 15%;
+  margin: 0 30px;
+}
+.blogContent .wrapper .sophieStory .sophieStoryBottomFirst .sophieStoryBottomFirstContent,
+.blogContent .wrapper .sophieStory .sophieStoryBottomFirst .sophieStoryBottomSecondContent,
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond .sophieStoryBottomFirstContent,
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond .sophieStoryBottomSecondContent {
+  width: 80%;
+}
+.blogContent .wrapper .sophieStory .sophieStoryBottomFirst .sophieStoryBottomFirstContent h5,
+.blogContent .wrapper .sophieStory .sophieStoryBottomFirst .sophieStoryBottomSecondContent h5,
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond .sophieStoryBottomFirstContent h5,
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond .sophieStoryBottomSecondContent h5 {
+  font-size: 25px;
+  font-size: 1.25rem;
+  color: #285e64;
+  margin: 15px 0;
+}
+.blogContent .wrapper .sophieStory .sophieStoryBottomFirst .sophieStoryBottomFirstContent p,
+.blogContent .wrapper .sophieStory .sophieStoryBottomFirst .sophieStoryBottomSecondContent p,
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond .sophieStoryBottomFirstContent p,
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond .sophieStoryBottomSecondContent p {
+  margin: 0 0 20px;
+}
+.blogContent .wrapper .sophieStory .sophieStoryForm {
+  margin-top: 40px;
+}
+.blogContent .wrapper .sophieStory .sophieStoryForm .separateSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogContent .wrapper .sophieStory .sophieStoryForm input {
+  font-size: 30px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding: 20px 30px;
+  border: transparent;
+  width: 49%;
+  font-style: italic;
+}
+.blogContent .wrapper .sophieStory .sophieStoryForm textarea {
+  font-size: 30px;
+  font-size: 1.5rem;
+  width: 100%;
+  border: transparent;
+  padding: 40px 0 20px 30px;
+  resize: none;
+  font-style: italic;
+}
+.blogContent .wrapper .sophieStory .sophieStoryForm .contactButton {
+  font-size: 30px;
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 20px 0 50px;
+}
+
+@media (max-width: 1131px) {
+  .hobbySection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hobbySection .favoriteImgContainer {
+    background-color: none;
+    margin: 0;
+  }
 }

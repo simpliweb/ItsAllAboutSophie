@@ -11,7 +11,7 @@
 
 header {
     height: 500px;
-}
+} // END header
 
 .contactHeader {
     background-color: rgba($color: $senary, $alpha: 0.1);
@@ -40,12 +40,11 @@ header {
             transition: 3s;
             cursor: pointer;
         }
-    }
-}
+    } // END .contactTitle
+} // END contactHeader
 
 .contactMain {
     background-color: rgba($color: $senary, $alpha: 0.1);
-    // margin-top: -100px;
     
     .wrapper {
     display: flex;
@@ -79,8 +78,8 @@ header {
                             cursor: pointer;
                             transition: 0.3s;
                         }
-                    }
-                }            
+                    } // END i
+                } // END .socialLInks           
 
                 span {
                     font-weight: bold;
@@ -89,8 +88,8 @@ header {
                 .address {
                     margin-top: 15px;
                 }                
-            }
-        }
+            } // END .contactDetails
+        } // END .contactContainer
     }
 
     .contactForm {
@@ -109,6 +108,7 @@ header {
             padding: 20px 30px;
             border: transparent;
             width: 49%;
+            font-style: italic;
         }
 
         textarea {
@@ -116,6 +116,7 @@ header {
             border: transparent;
             padding: 40px 0 20px 30px;
             resize: none;
+            font-style: italic;
         }
         
         .contactButton { 
@@ -123,5 +124,5 @@ header {
             width: 100%;
             margin: 20px 0 50px;
         }
-    }
-}
+    } // .contactForm
+} // .contactMain
