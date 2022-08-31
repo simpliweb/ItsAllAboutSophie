@@ -404,7 +404,7 @@
 
 @media screen and (max-width: 380px) {
     #home {
-        height: 500px;
+        height: 420px;
 
         .wrapper {
             .headingTitle {
@@ -467,8 +467,10 @@
             .favoriteContainer {
                 margin-top: 10px;
                 .favoriteImgContainer {
-                    height: 300px;
-                    margin-bottom: 60px;
+                    height: auto;
+                    img {
+                        height: auto;
+                    }
                 }
 
                 .favoriteContent {
@@ -488,8 +490,10 @@
                 height: auto;
 
                 .travelImgContainer {
-                    height: 300px;
-                    margin-bottom: 60px;
+                    height: auto;                    
+                    img {
+                        height: auto;
+                    }
                 }
                 
                 .travelContent {

@@ -1433,7 +1433,7 @@ header {
 }
 @media screen and (max-width: 380px) {
   #home {
-    height: 500px;
+    height: 420px;
   }
   #home .wrapper .headingTitle {
     margin-left: 30px;
@@ -1479,8 +1479,10 @@ header {
     margin-top: 10px;
   }
   .hobbySection .hobby .favoriteContainer .favoriteImgContainer {
-    height: 300px;
-    margin-bottom: 60px;
+    height: auto;
+  }
+  .hobbySection .hobby .favoriteContainer .favoriteImgContainer img {
+    height: auto;
   }
   .hobbySection .hobby .favoriteContainer .favoriteContent {
     padding: 0;
@@ -1494,8 +1496,10 @@ header {
     height: auto;
   }
   .hobbySection .hobby .travelContainer .travelImgContainer {
-    height: 300px;
-    margin-bottom: 60px;
+    height: auto;
+  }
+  .hobbySection .hobby .travelContainer .travelImgContainer img {
+    height: auto;
   }
   .hobbySection .hobby .travelContainer .travelContent .innerContent p {
     padding-left: 15px;
