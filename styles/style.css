@@ -967,6 +967,10 @@ header {
   font-weight: bold;
   text-decoration: none;
 }
+.blogContent .wrapper .sophieInfo .sophieSummary p a:hover, .blogContent .wrapper .sophieInfo .sophieSummary p a:focus {
+  cursor: pointer;
+  color: #05afc1;
+}
 .blogContent .wrapper .sophieInfo .recentPost {
   background-color: white;
   width: 80%;
@@ -1031,14 +1035,9 @@ header {
   font-weight: normal;
   font-style: italic;
 }
-.blogContent .wrapper .sophieStory .sophieFullBlog .sophieStorySubtitle li {
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-.blogContent .wrapper .sophieStory .sophieFullBlog .sophieStorySubtitle li a {
+.blogContent .wrapper .sophieStory .sophieFullBlog .sophieStorySubtitle span {
   color: #285e64;
   font-weight: bold;
-  text-decoration: none;
 }
 .blogContent .wrapper .sophieStory hr {
   border: 4px solid #f6a823;
@@ -1128,6 +1127,9 @@ header {
 }
 
 @media screen and (max-width: 1300px) {
+  #home .wrapper .headingTitle .headingTitleContainer img {
+    top: -30px;
+  }
   .hobbySection .hobby .favoriteContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1205,7 +1207,7 @@ header {
     display: none;
   }
   .description .wrapper {
-    margin: 0 17%;
+    margin: 0 auto;
   }
   .blogContent .wrapper {
     -webkit-box-orient: vertical;
@@ -1274,8 +1276,7 @@ header {
     width: 100%;
   }
   .description {
-    margin: 50px 40px 80px;
-    padding: 0;
+    padding: 120px 40px 160px;
   }
   .description .wrapper {
     margin: 0 auto;
@@ -1410,6 +1411,21 @@ header {
     width: 100%;
   }
 }
+@media screen and (max-width: 725px) {
+  #home .wrapper .headingTitle {
+    margin-left: 50px;
+  }
+  #home .wrapper .headingTitle h2 {
+    font-size: 150px;
+    font-size: 7.5rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  #home .wrapper .headingTitle h2 {
+    font-size: 130px;
+    font-size: 6.5rem;
+  }
+}
 @media screen and (max-width: 380px) {
   #home {
     height: 500px;
@@ -1431,8 +1447,7 @@ header {
     width: 100%;
   }
   .description {
-    padding: 0;
-    margin: 0 15px 70px 15px;
+    padding: 80px 15px 100px;
   }
   .description .wrapper h3,
 .description .wrapper p {
