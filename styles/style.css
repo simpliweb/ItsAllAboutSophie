@@ -1475,6 +1475,13 @@ header {
     font-size: 20px;
     font-size: 1rem;
   }
+  .hobbySection .hobby .favoriteContainer {
+    margin-top: 10px;
+  }
+  .hobbySection .hobby .favoriteContainer .favoriteImgContainer {
+    height: 300px;
+    margin-bottom: 60px;
+  }
   .hobbySection .hobby .favoriteContainer .favoriteContent {
     padding: 0;
     width: 90%;
@@ -1486,6 +1493,10 @@ header {
     width: 90%;
     height: auto;
   }
+  .hobbySection .hobby .travelContainer .travelImgContainer {
+    height: 300px;
+    margin-bottom: 60px;
+  }
   .hobbySection .hobby .travelContainer .travelContent .innerContent p {
     padding-left: 15px;
   }
@@ -1493,7 +1504,7 @@ header {
     width: 100%;
   }
   .contact .wrapper .contactInfo {
-    margin: 0;
+    margin: 0 0 0 20px;
   }
   .contact .wrapper .contactInfo .content {
     width: 100%;
