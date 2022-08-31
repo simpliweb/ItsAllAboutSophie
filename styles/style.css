@@ -1208,6 +1208,11 @@ header {
   }
   .description .wrapper {
     margin: 0 auto;
+    width: 100%;
+  }
+  .description .wrapper p {
+    padding: 0;
+    width: 100%;
   }
   .blogContent .wrapper {
     -webkit-box-orient: vertical;

@@ -103,6 +103,12 @@
     .description {
         .wrapper {
             margin: 0 auto;
+            width: 100%;
+            
+            p {
+                padding: 0;
+                width: 100%;
+            }
         }
     } // END .description
 
