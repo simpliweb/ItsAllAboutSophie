@@ -12,7 +12,6 @@
 .description {    
     background-color: rgba($color: $senary, $alpha: 0.1);
     padding: 120px 50px 160px 50px;
-    position: relative;
 
     h3 {
         text-transform: uppercase;
@@ -44,22 +43,23 @@
             margin-top: 0;
         }
 
-        .favoriteImgContainer {
+        .favoriteContainer {
             display: flex;
-            background-color: $quinary;
-            margin-bottom: 100px;
-            margin-top: -40px;
-            height: 370px;
-            position: relative;
-
-            img {                
+            .favoriteImgContainer {                
+                background-color: $quinary;
+                margin-bottom: 100px;
+                margin-top: -40px;
                 height: 370px;
-                width: 68%;
-                padding-right: 20px;
-                margin-top: -20px;    
-                margin-left: auto;      
-                position: relative;   
-            }   
+                width: 50%;
+
+                img {                
+                    height: 370px;
+                    width: 68%;
+                    margin-right: 20px;
+                    margin-top: -20px;    
+                    margin-left: auto;      
+                }   
+            }
         }
 
         .favoriteContent {
@@ -79,37 +79,40 @@
             }
         }
         
-        .travelContent {
-            margin-top: -20px;
-            text-align: right;
-            padding: 0 70px 70px 100px;
+        .travelContainer {
+            display: flex; 
 
-            h4 {
-                margin-bottom: 15px;
-            }
-            p {
-                padding-left: 220px;
-            }
-
-            .button {
-                margin-top: 10px;
-            }
-        }
-
-        .travelImgContainer {
-            width: 50%;
-            background-color: $primary;
-            height: 370px;
-
-            img {
-                height: 370px;
-                width: 68%;
+            .travelContent {
                 margin-top: -20px;
-                margin-left: -20px;
+                text-align: right;
+                padding: 0 70px 70px 100px;
+
+                h4 {
+                    margin-bottom: 15px;
+                }
+                p {
+                    padding-left: 220px;
+                }
+
+                .button {
+                    margin-top: 10px;
+                }
             }
-        }
-    }
-} // END .hobby section
+            .travelImgContainer {
+                width: 50%;
+                background-color: $primary;
+                height: 370px;
+
+                img {
+                    height: 370px;
+                    width: 68%;
+                    margin-top: -20px;
+                    margin-left: -20px;
+                }
+            }
+        }        
+    } // END .hobby 
+} // END .hobbySection
 
 
 .contact {

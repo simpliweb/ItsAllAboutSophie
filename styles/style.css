@@ -549,7 +549,6 @@ p {
 .description {
   background-color: rgba(79, 79, 79, 0.1);
   padding: 120px 50px 160px 50px;
-  position: relative;
 }
 .description h3 {
   text-transform: uppercase;
@@ -579,23 +578,24 @@ p {
 .hobbySection .hobby p {
   margin-top: 0;
 }
-.hobbySection .hobby .favoriteImgContainer {
+.hobbySection .hobby .favoriteContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.hobbySection .hobby .favoriteContainer .favoriteImgContainer {
   background-color: #a82706;
   margin-bottom: 100px;
   margin-top: -40px;
   height: 370px;
-  position: relative;
+  width: 50%;
 }
-.hobbySection .hobby .favoriteImgContainer img {
+.hobbySection .hobby .favoriteContainer .favoriteImgContainer img {
   height: 370px;
   width: 68%;
-  padding-right: 20px;
+  margin-right: 20px;
   margin-top: -20px;
   margin-left: auto;
-  position: relative;
 }
 .hobbySection .hobby .favoriteContent {
   padding: 75px 0 0 80px;
@@ -612,26 +612,31 @@ p {
 .hobbySection .hobby .favoriteContent h4 {
   margin-bottom: 15px;
 }
-.hobbySection .hobby .travelContent {
+.hobbySection .hobby .travelContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hobbySection .hobby .travelContainer .travelContent {
   margin-top: -20px;
   text-align: right;
   padding: 0 70px 70px 100px;
 }
-.hobbySection .hobby .travelContent h4 {
+.hobbySection .hobby .travelContainer .travelContent h4 {
   margin-bottom: 15px;
 }
-.hobbySection .hobby .travelContent p {
+.hobbySection .hobby .travelContainer .travelContent p {
   padding-left: 220px;
 }
-.hobbySection .hobby .travelContent .button {
+.hobbySection .hobby .travelContainer .travelContent .button {
   margin-top: 10px;
 }
-.hobbySection .hobby .travelImgContainer {
+.hobbySection .hobby .travelContainer .travelImgContainer {
   width: 50%;
   background-color: #f6a823;
   height: 370px;
 }
-.hobbySection .hobby .travelImgContainer img {
+.hobbySection .hobby .travelContainer .travelImgContainer img {
   height: 370px;
   width: 68%;
   margin-top: -20px;
@@ -1122,8 +1127,8 @@ header {
   margin: 20px 0 50px;
 }
 
-@media (max-width: 1131px) {
-  .hobbySection {
+@media screen and (max-width: 1300px) {
+  .hobbySection .hobby .favoriteContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1131,9 +1136,451 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .hobbySection .favoriteImgContainer {
-    background-color: none;
+  .hobbySection .hobby .favoriteContainer .favoriteImgContainer {
+    background-color: transparent;
+    padding: 0;
     margin: 0;
+    width: 45%;
+  }
+  .hobbySection .hobby .favoriteContainer .favoriteImgContainer img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .hobbySection .hobby .favoriteContainer .favoriteContent {
+    margin: 30px 0 50px;
+    padding: 0;
+    width: 45%;
+  }
+  .hobbySection .hobby .favoriteContainer .favoriteContent .innerContent {
+    text-align: left;
+    width: 100%;
+  }
+  .hobbySection .hobby .travelContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 45%;
+  }
+  .hobbySection .hobby .travelContainer .travelContent {
+    margin: 30px 0 50px;
+    padding: 0;
+    width: 100%;
+  }
+  .hobbySection .hobby .travelContainer .travelContent .innerContent {
+    text-align: left;
+  }
+  .hobbySection .hobby .travelContainer .travelContent .innerContent p {
+    padding: 0;
+  }
+  .hobbySection .hobby .travelContainer .travelImgContainer {
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+  }
+  .hobbySection .hobby .travelContainer .travelImgContainer img {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #home .wrapper .headingTitle {
+    margin-left: 23%;
+  }
+  #home .wrapper .headingTitle .headingTitleContainer img {
+    width: 35%;
+  }
+  #home .wrapper .headerImgContainer img {
+    display: none;
+  }
+  .description .wrapper {
+    margin: 0 17%;
+  }
+  .blogContent .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogContent .wrapper .sophieInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .blogContent .wrapper .sophieInfo .sophiePhotoContainer {
+    width: 45%;
+  }
+  .blogContent .wrapper .sophieInfo .recentPost {
+    width: 50%;
+    height: 662px;
+  }
+  .blogContent .wrapper .sophieStory {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navBar .wrapper .topNav .menuOpen {
+    display: block;
+    background: transparent;
+    margin: 15px 10px 10px 0;
+    padding: 0;
+  }
+  .navBar .wrapper .topNav .menuOpen i {
+    color: #f0efed;
+    font-size: 50px;
+    font-size: 2.5rem;
+  }
+  .navBar .wrapper .topNav .mainMenu {
+    display: none;
+  }
+  .navBar .slideOutNav button {
+    background-color: transparent;
+    font-size: 50px;
+    font-size: 2.5rem;
+  }
+  .navBar .slideOutNav button:hover, .navBar .slideOutNav button:focus {
+    color: #f0efed;
+  }
+  #home {
+    height: 500px;
+  }
+  #home .wrapper .headingTitle {
+    margin: 90px 0 90px 90px;
+  }
+  #home .wrapper .headingTitle .headingTitleContainer img {
+    left: -20px;
+    width: 45%;
+  }
+  #home .wrapper .headingTitle h2 {
+    margin-left: 20px;
+  }
+  #mainContent button {
+    width: 100%;
+  }
+  .description {
+    margin: 50px 40px 80px;
+    padding: 0;
+  }
+  .description .wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .description .wrapper p {
+    padding: 0;
+  }
+  .hobbySection .hobby .favoriteContainer .favoriteImgContainer {
+    width: 90%;
+    margin: 0;
+  }
+  .hobbySection .hobby .favoriteContainer .favoriteContent {
+    padding: 0;
+    width: 90%;
+  }
+  .hobbySection .hobby .favoriteContainer .favoriteContent .innerContent p {
+    padding-left: 15px;
+  }
+  .hobbySection .hobby .travelContainer {
+    width: 90%;
+    height: auto;
+  }
+  .hobbySection .hobby .travelContainer .travelImgContainer {
+    width: 100%;
+  }
+  .hobbySection .hobby .travelContainer .travelImgContainer img {
+    width: 100%;
+  }
+  .hobbySection .hobby .travelContainer .travelContent {
+    width: 100%;
+    padding: 0;
+  }
+  .contact {
+    height: auto;
+  }
+  .contact .wrapper {
+    width: 100%;
+  }
+  .contact .wrapper .contactInfo {
+    margin: 0;
+  }
+  .contact .wrapper .contactInfo .content {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .journey .journeyContentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .journey .journeyContentContainer .journeyBottomImgContainer {
+    width: 100%;
+  }
+  .journey .journeyContentContainer .journeyBottomImgContainer img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .journey .journeyContentContainer .journeyContent {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0;
+  }
+  .imgGallery .wrapper .imgGalleryContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  .imgGallery .wrapper .imgGalleryContainer .img1,
+.imgGallery .wrapper .imgGalleryContainer .img2,
+.imgGallery .wrapper .imgGalleryContainer .img3 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .blogContent .wrapper p {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+  .blogContent .wrapper .sophieInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogContent .wrapper .sophieInfo .sophiePhotoContainer {
+    width: 100%;
+  }
+  .blogContent .wrapper .sophieInfo .sophiePhotoContainer .sophiePhoto {
+    margin-left: 18%;
+  }
+  .blogContent .wrapper .sophieInfo .sophiePhotoContainer .sophiePhoto .sophieImgContainer img {
+    width: 100%;
+  }
+  .blogContent .wrapper .sophieInfo .sophiePhotoContainer .sophieSummary {
+    width: 90%;
+  }
+  .blogContent .wrapper .sophieInfo .recentPost {
+    width: 100%;
+    height: 270px;
+  }
+  .blogContent .wrapper .sophieInfo .recentPost ul {
+    font-size: 20px;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .contactMain .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactMain .wrapper .contactContainer {
+    margin: 100px 0 70px 40px;
+    width: 67%;
+  }
+  .contactForm .separateSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactForm .separateSection input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  #home {
+    height: 500px;
+  }
+  #home .wrapper .headingTitle {
+    margin-left: 30px;
+  }
+  #home .wrapper .headingTitle .headingTitleContainer img {
+    top: -20px;
+    left: 0;
+    width: 40%;
+  }
+  #home .wrapper .headingTitle h2 {
+    font-size: 70px;
+    font-size: 3.5rem;
+    margin-left: 20px;
+  }
+  #mainContent button {
+    width: 100%;
+  }
+  .description {
+    padding: 0;
+    margin: 0 15px 70px 15px;
+  }
+  .description .wrapper h3,
+.description .wrapper p {
+    margin-left: 15px;
+  }
+  .description .wrapper h3 {
+    font-size: 35px;
+    font-size: 1.75rem;
+  }
+  .description .wrapper p {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+  .hobbySection .hobby h4 {
+    font-size: 30px;
+    font-size: 1.5rem;
+    margin-left: 15px;
+  }
+  .hobbySection .hobby p {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+  .hobbySection .hobby .favoriteContainer .favoriteContent {
+    padding: 0;
+    width: 90%;
+  }
+  .hobbySection .hobby .favoriteContainer .favoriteContent .innerContent p {
+    padding-left: 15px;
+  }
+  .hobbySection .hobby .travelContainer {
+    width: 90%;
+    height: auto;
+  }
+  .hobbySection .hobby .travelContainer .travelContent .innerContent p {
+    padding-left: 15px;
+  }
+  .contact .wrapper {
+    width: 100%;
+  }
+  .contact .wrapper .contactInfo {
+    margin: 0;
+  }
+  .contact .wrapper .contactInfo .content {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .contact .wrapper .contactInfo p {
+    display: none;
+  }
+  .journey .journeyContent {
+    margin-top: 30px;
+  }
+  .journey .journeyContent h3 {
+    font-size: 30px;
+    font-size: 1.5rem;
+  }
+  .journey .journeyContent p {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+  .imgGallery .wrapper .imgGalleryContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  .imgGallery .wrapper .imgGalleryContainer .img1,
+.imgGallery .wrapper .imgGalleryContainer .img2,
+.imgGallery .wrapper .imgGalleryContainer .img3 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .blogContent .wrapper .sophieInfo .sophiePhotoContainer .sophiePhoto {
+    margin-left: 0;
+    width: 80%;
+  }
+  .blogContent .wrapper .sophieStory .sophieFullBlog h3 {
+    font-size: 30px;
+    font-size: 1.5rem;
+  }
+  .blogContent .wrapper .sophieStory .sophieFullBlog .sophieStorySubtitle {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+  .blogContent .wrapper .sophieStory .sophieStoryBottomFirst,
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 50px;
+  }
+  .blogContent .wrapper .sophieStory .sophieStoryBottomFirst .sophieStoryBottomFirstImg,
+.blogContent .wrapper .sophieStory .sophieStoryBottomFirst .sophieStoryBottomSecondImg,
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond .sophieStoryBottomFirstImg,
+.blogContent .wrapper .sophieStory .sophieStoryBottomSecond .sophieStoryBottomSecondImg {
+    width: 50%;
+  }
+  .blogContent .wrapper .sophieStory .sophieStoryForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogContent .wrapper .sophieStory .sophieStoryForm .separateSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogContent .wrapper .sophieStory .sophieStoryForm .separateSection input {
+    width: 100%;
+  }
+  .contactMain .wrapper {
+    width: 100%;
+  }
+  .contactMain .wrapper .contactContainer {
+    margin: 100px 0 0;
+  }
+  .contactMain .wrapper .contactForm {
+    margin: 0;
+  }
+  .contactMain .wrapper .contactForm .separateSection #name {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #home .wrapper .headingTitle {
+    margin-left: 10px;
+  }
+  .blogContent .wrapper .sophieStory .sophieFullblog h3 {
+    font-size: 15px;
+    font-size: 0.75rem;
+  }
+  .contactMain .wrapper .contactContainer {
+    height: 270px;
+  }
+  .contactMain .wrapper .contactContainer .contactDetails {
+    padding: 15px 15px 0;
+  }
+  .contactMain .wrapper .contactForm {
+    margin: 0;
+  }
+  .contactMain .wrapper .contactForm .separateSection #name, .contactMain .wrapper .contactForm .separateSection #email {
+    padding: 10px;
+  }
+  .contactMain .wrapper .contactForm .separateSection #name {
+    margin-top: 20px;
   }
 }

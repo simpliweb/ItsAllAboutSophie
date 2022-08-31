@@ -1,12 +1,611 @@
-@media (max-width: 1131px) {
-    // home 
+@media screen and (max-width: 1300px) {    
     .hobbySection {
-        display: flex;
-        flex-direction: column;    
+        .hobby {
+            .favoriteContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;                
 
-        .favoriteImgContainer {
-            background-color: none;
-            margin: 0;
-        }       
+                .favoriteImgContainer {                
+                    background-color: transparent;
+                    padding: 0;  
+                    margin: 0;
+                    width: 45%;
+
+                    img {
+                        width: 100%;  
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                
+                .favoriteContent {  
+                    margin: 30px 0 50px;  
+                    padding: 0;
+                    width: 45%;
+                    .innerContent {
+                        text-align: left;
+                        width: 100%;                
+                    }
+                }
+            } // END .favoriteContainer;
+            
+            .travelContainer {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                width: 45%;
+
+                .travelContent {
+                    margin: 30px 0 50px;
+                    padding: 0;
+                    width: 100%;
+
+                    .innerContent {                        
+                        text-align: left;
+                        p {
+                            padding: 0;
+                            
+                        }   
+                    }
+                }
+
+                .travelImgContainer {
+                    width: 100%;
+                    background-color: transparent;
+                    padding: 0;
+
+                    img {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+            } // END .travelContainer                  
+        } // END .hobby
+    } // END .hobbySection
+    // END main.html
+} // END media query max-width: 1300px
+
+
+@media screen and (max-width: 1200px) {
+    #home {
+        .wrapper {
+            .headingTitle {
+                margin-left: 23%;
+
+                .headingTitleContainer {
+                    img {
+                        width: 35%;
+                    }
+                }
+            }
+
+            .headerImgContainer {
+                img {
+                    display: none;
+                }
+            }
+        } // END .wrapper
+    }  // END #home
+    
+    .description {
+        .wrapper {
+            margin: 0 17%;
+        }
+    } // END .description
+
+    .blogContent {
+        .wrapper {
+            flex-direction: column;
+
+            .sophieInfo {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                
+                .sophiePhotoContainer {
+                    width: 45%;
+                }
+
+                .recentPost {
+                    width: 50%;
+                    height: 662px;
+                }               
+            }
+
+            .sophieStory {
+                margin-top: 50px;
+                width: 100%;
+            }            
+        } // END .wrapper
+    } // END .blogContent
+    // END blog.html   
+} // END media query max-width: 1200px
+
+
+@media screen and (max-width: 800px) {
+    .navBar {
+        .wrapper {
+            .topNav {
+                .menuOpen {
+                    display: block;
+                    background: transparent;
+                    margin: 15px 10px 10px 0;
+                    padding: 0;
+
+                    i {
+                        color: $tertiary;
+                        @include fontSize(50);
+                    }
+                }
+                
+                .mainMenu {
+                    display: none;
+                }                
+            } // END .topNav
+        } // END .wrapper
+
+        .slideOutNav {
+            button {
+                background-color: transparent;
+                @include fontSize(50);
+
+                &:hover,
+                &:focus {
+                    color: $tertiary;                    
+                }
+            }
+        } 
+    } // END .navBar
+    // END hamburgerNav
+
+    #home {
+        height: 500px;
+
+        .wrapper {
+            .headingTitle {
+                margin: 90px 0 90px 90px;
+
+                .headingTitleContainer {
+                    img {
+                        left: -20px;
+                        width: 45%;
+                    }
+                }
+
+                h2 {
+                    margin-left: 20px;
+                }
+            } // END .headingTitle
+        } // END .wrapper
+    } // END #home
+
+    #mainContent {
+        button {
+            width: 100%;
+        }
     }
-}
+
+    .description {
+        margin: 50px 40px 80px;
+        padding: 0;
+        .wrapper {
+            margin: 0 auto;
+            width: 100%;
+
+            p {
+                padding: 0;
+            }
+        } // END .wrapper
+    } // END .description
+
+
+    .hobbySection {
+        .hobby {           
+            .favoriteContainer {
+                .favoriteImgContainer {
+                    width: 90%;
+                    margin: 0;
+                }
+
+                .favoriteContent {
+                    padding: 0;
+                    width: 90%;
+                    .innerContent {
+                        p {
+                            padding-left: 15px;
+                        }
+                    }   
+                }
+            } // END .favoriteContainer
+
+            .travelContainer {
+                width: 90%;
+                height: auto;
+
+                .travelImgContainer {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .travelContent {
+                    width: 100%;
+                    padding: 0;  
+                }
+            } // END .travelContainer
+        } // END .hobby
+    } //END .hobbySection
+
+    .contact {
+        height: auto;
+
+        .wrapper {
+            width: 100%;            
+
+            .contactInfo {
+                margin: 0;
+
+                .content {
+                    width: 100%;
+                    margin-left: 20px;
+                }
+            } // END .contactInfo
+        } // END .wrapper
+    } // END .contact
+    .journey {
+        .journeyContentContainer {
+            flex-direction: column;
+
+            .journeyBottomImgContainer {
+                width: 100%;
+
+                img {
+                    box-shadow: none;
+                }
+            }
+
+            .journeyContent {
+                margin-top: 30px;
+                width: 100%;
+                padding: 0;
+            }
+        } // END .journeyContentContainer
+    } // END.journey
+
+    .imgGallery {
+        .wrapper {
+            .imgGalleryContainer {
+                flex-direction: column;
+                padding-top: 0;
+
+                .img1,
+                .img2,
+                .img3 {
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+            } // END .imgGalleryContainer
+        } // END .wrapper
+    } // END .imgGallery
+    // END index.html 
+
+    .blogContent {
+        .wrapper {
+            p {
+                @include fontSize(20);
+            }
+
+            .sophieInfo {
+                flex-direction: column;
+                .sophiePhotoContainer {
+                    width: 100%;
+                    .sophiePhoto {
+                        margin-left: 18%;
+                        .sophieImgContainer {
+                            img {
+                                width: 100%;
+                            }
+                        }                        
+                    } // END .sophiePhoto
+
+                    .sophieSummary {
+                        width: 90%;
+                    }                    
+                }
+                .recentPost {
+                    width: 100%;
+                    height: 270px;
+
+                    ul {
+                        @include fontSize(20);
+                        margin: 0;
+                    }
+                }
+            } // END .sophieInfo           
+        } // END .wrapper 
+    } // END .blogContent
+    // END blog.html
+
+    .contactMain {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            .contactContainer {
+                margin: 100px 0 70px 40px;
+                width: 67%;         
+            }
+        } // END .wrapper
+    } // END .contactMain
+
+    .contactForm {
+        .separateSection {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+            }
+        }
+    } // END .contactForm
+    // END contact.html
+} // END media query max-width: 800px 
+
+
+@media screen and (max-width: 380px) {
+    #home {
+        height: 500px;
+
+        .wrapper {
+            .headingTitle {
+                margin-left: 30px;
+
+                .headingTitleContainer {
+                    img {
+                        top: -20px;
+                        left: 0;
+                        width: 40%;
+                    }
+                }
+
+                h2 {
+                    @include fontSize(70);
+                    margin-left: 20px;
+                }
+            } // END .headingTitle
+        } // END .wrapper
+    } // END #home
+
+    #mainContent {
+        button {
+            width: 100%;
+        }
+    }
+
+    .description {
+        padding: 0;
+        margin: 0 15px 70px 15px;
+
+        .wrapper {
+            h3,
+            p {
+                margin-left: 15px;
+            }
+
+            h3 {
+                @include fontSize(35);
+            }
+
+            p {
+                @include fontSize(20);
+            }
+        } // END .wrapper
+    } // END .description
+    
+    .hobbySection {
+        .hobby {
+
+            h4 {
+                @include fontSize(30);
+                margin-left: 15px;
+            }
+
+            p {
+                @include fontSize(20);
+            }
+
+
+            .favoriteContainer {
+                .favoriteContent {
+                    padding: 0;
+                    width: 90%;
+
+                    .innerContent {
+                        p {
+                            padding-left: 15px;
+                        }
+                    }
+                }
+            }  // END .favoriteContainer
+
+            .travelContainer {
+                width: 90%;
+                height: auto;
+
+                .travelContent {
+                    .innerContent {
+                        p {
+                            padding-left: 15px;
+                        }
+                    }
+                }
+            } // END .travelContainer
+        } // END .hobby
+    } //END .hobbySection
+
+    .contact {
+        .wrapper {
+            width: 100%;
+
+            .contactInfo {
+                margin: 0;
+
+                .content {
+                    width: 100%;
+                    margin-left: 20px;
+                }
+
+                p {
+                    display: none;
+                }
+            } // END .contactInfo
+        } // END .wrapper
+    } // END .contact
+
+    .journey {
+            .journeyContent {
+                margin-top: 30px;
+                h3 {
+                    @include fontSize(30);
+                }
+
+                p {
+                    @include fontSize(20);
+                }
+            } // END .journeyContent
+    } // END.journey
+
+    .imgGallery {
+        .wrapper {
+            .imgGalleryContainer {
+                flex-direction: column;
+                padding-top: 0;
+
+                .img1,
+                .img2,
+                .img3 {
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+            } // END .imgGalleryContainer
+        } // END .wrapper
+    } // END .imgGallery
+    // END index.html 
+
+    .blogContent {
+        .wrapper {        
+            .sophieInfo {
+                .sophiePhotoContainer {
+                    .sophiePhoto {
+                        margin-left: 0;
+                        width: 80%;
+                    }
+                }
+            }
+            .sophieStory {
+                .sophieFullBlog {
+                    h3 {
+                        @include fontSize(30);
+                    }
+                    .sophieStorySubtitle {
+                        @include fontSize(20);
+                    }
+                }
+
+                .sophieStoryBottomFirst,
+                .sophieStoryBottomSecond {
+                    flex-direction: column;
+                    padding-left: 50px;
+                    .sophieStoryBottomFirstImg,
+                    .sophieStoryBottomSecondImg {
+                        width: 50%;
+                    }
+                }
+
+                .sophieStoryForm {
+                    flex-direction: column;
+                    .separateSection {
+                        flex-direction: column;
+                            input {
+                                width: 100%;
+                            }
+                    } // END .separateSection
+                } // END .sophieStoryForm
+            } // END .sophieStory
+        } // END .wrapper
+    } // END .blogContent
+    // END blog.html
+
+    .contactMain {
+        .wrapper {
+            width: 100%;
+
+            .contactContainer {
+                margin: 100px 0 0;
+            }
+
+            .contactForm {
+                margin: 0;
+
+                .separateSection {
+                    #name {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        } // END .wrapper
+    } // END .contactMain
+    // END contact.html
+} // END media query max-width: 380px 
+
+
+@media screen and (max-width: 320px) {    
+    #home {        
+        .wrapper {
+            .headingTitle {
+                margin-left: 10px;
+            } // END .headingTitle
+        } // END .wrapper
+    } // END #home
+
+    .blogContent {
+        .wrapper {         
+            .sophieStory {
+                .sophieFullblog {
+                    h3 {
+                        @include fontSize(15);
+                    }
+                }               
+            } // END .sophieStory
+        } // END .wrapper
+    } // END .blogContent
+    // END blog.html
+
+    .contactMain {
+        .wrapper {           
+            .contactContainer {
+                height: 270px;
+                .contactDetails {
+                    padding: 15px 15px 0;
+                }
+            }
+
+            .contactForm {
+                margin: 0;
+
+                .separateSection {
+                    #name, #email {
+                        padding: 10px;
+                    }
+                    #name {
+                        margin-top: 20px;
+                    }
+                }
+            } // END .contactForm
+        } // END .wrapper
+    } // END .contactMain
+    // END contact.html
+} // END media query max-width: 320px 
