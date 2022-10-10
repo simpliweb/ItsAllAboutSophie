@@ -103,6 +103,15 @@ header {
             justify-content: space-between;
         }
 
+        input,
+        textarea {
+
+            &:hover,
+            &:focus {
+                border: 3px solid $quaternary;
+            }
+        }
+
         input {
             margin-bottom: 20px;
             padding: 20px 30px;

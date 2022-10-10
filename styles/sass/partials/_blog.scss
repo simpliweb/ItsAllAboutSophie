@@ -163,7 +163,12 @@
                     text-transform: uppercase;
                     margin-top: 0;
                 
-                }                
+                }               
+                
+                span {
+                    display: inline-block;
+                    margin-bottom: 15px;
+                }
 
                 .sophieStorySubtitle {
                     @include fontSize(25);
@@ -173,7 +178,7 @@
 
                     span {
                         color: $septenary;
-                        font-weight: bold;                      
+                        font-weight: bold;                                             
                         }
                     } // END sophieStorySubtitle 
             } // END .sophieFullBlog
@@ -230,13 +235,20 @@
                     justify-content: space-between;
                 }
 
+                input, textarea {
+                    &:hover,
+                    &:focus {
+                        border: 3px solid $quaternary;
+                    }
+                }
+
                 input {
                     @include fontSize(30);
                     margin-bottom: 20px;
                     padding: 20px 30px;
                     border: transparent;
                     width: 49%;
-                    font-style: italic;                    
+                    font-style: italic;                      
                 }
 
                 textarea {
