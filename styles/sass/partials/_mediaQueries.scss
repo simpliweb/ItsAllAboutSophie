@@ -198,11 +198,11 @@
         } // END .wrapper
     } // END #home
 
-    #mainContent {
+    // #mainContent {
         button {
             width: 100%;
         }
-    }
+    // }
 
     .description {
         padding: 120px 40px 160px;
@@ -295,17 +295,25 @@
 
     .imgGallery {
         .wrapper {
+            .arrow-prev, .arrow-next {
+                top: 85%;
+                margin: 0;
+                height: 70px;
+                width: 70px;
+                font-size: 40px;
+            }
+            .arrow-prev {
+                left: 5%;
+            }
+            .arrow-next {
+                right: 3%;
+            }
             .imgGalleryContainer {
-                flex-direction: column;
-                padding-top: 0;
-
-                .img1,
-                .img2,
-                .img3 {
-                    width: 100%;
-                    margin-bottom: 40px;
+                .photo {
+                    width: 90%;
+                    margin: 20px 20px 40px 15px;
                 }
-            } // END .imgGalleryContainer
+            } // END .imgGalleryContainer       
         } // END .wrapper
     } // END .imgGallery
     // END index.html 
@@ -426,12 +434,6 @@
         } // END .wrapper
     } // END #home
 
-    #mainContent {
-        button {
-            width: 100%;
-        }
-    }
-
     .description {
         padding: 80px 15px 100px;        
 
@@ -539,23 +541,6 @@
             } // END .journeyContent
     } // END.journey
 
-    .imgGallery {
-        .wrapper {
-            .imgGalleryContainer {
-                flex-direction: column;
-                padding-top: 0;
-
-                .img1,
-                .img2,
-                .img3 {
-                    width: 100%;
-                    margin-bottom: 40px;
-                }
-            } // END .imgGalleryContainer
-        } // END .wrapper
-    } // END .imgGallery
-    // END index.html 
-
     .blogContent {
         .wrapper {        
             .sophieInfo {
@@ -631,6 +616,16 @@
             } // END .headingTitle
         } // END .wrapper
     } // END #home
+
+    .imgGallery {
+        .wrapper {
+            .imgGalleryContainer {
+                padding: 10px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    // END index.html
 
     .blogContent {
         .wrapper {         
