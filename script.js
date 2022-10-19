@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 }) // END hamburger nav
 
-// home page image carousel
+// home page image Carousel - index.html 
 const photoContainer = document.querySelector('.imgGalleryContainer');
 
 const rightArrow = document.querySelector('.arrow-next');
@@ -34,5 +34,6 @@ leftArrow.addEventListener("click", () => {
     const photoWidth = photo.clientWidth + 80;               
     photoContainer.scrollLeft -= photoWidth; 
         
-});
+}); // END image Carousel
+
 

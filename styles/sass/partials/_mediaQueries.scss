@@ -198,11 +198,6 @@
         } // END .wrapper
     } // END #home
 
-    // #mainContent {
-        button {
-            width: 100%;
-        }
-    // }
 
     .description {
         padding: 120px 40px 160px;
@@ -213,6 +208,10 @@
 
             p {
                 padding: 0;
+            }
+
+            button {
+                width: 100%;
             }
         } // END .wrapper
     } // END .description
@@ -233,6 +232,9 @@
                         p {
                             padding-left: 15px;
                         }
+                        button {
+                            width: 100%;
+                        }
                     }   
                 }
             } // END .favoriteContainer
@@ -252,6 +254,9 @@
                 .travelContent {
                     width: 100%;
                     padding: 0;  
+                }
+                button {
+                    width: 100%;
                 }
             } // END .travelContainer
         } // END .hobby
@@ -289,6 +294,10 @@
                 margin-top: 30px;
                 width: 100%;
                 padding: 0;
+
+                button {
+                    width: 100%;
+                }
             }
         } // END .journeyContentContainer
     } // END.journey
@@ -334,7 +343,7 @@
                             img {
                                 width: 100%;
                             }
-                        }                        
+                        }               
                     } // END .sophiePhoto
 
                     .sophieSummary {

@@ -992,6 +992,48 @@ header {
   width: 160%;
   height: 400px;
 }
+.blogContent .wrapper .sophieInfo .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid black;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+  -webkit-transition: 2s;
+  transition: 2s;
+  display: none;
+}
+.blogContent .wrapper .sophieInfo .modal .closeButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  background: transparent;
+  font-size: 50px;
+  padding: 0 20px 0 0;
+}
+.blogContent .wrapper .sophieInfo .modal #overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  pointer-events: none;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+.blogContent .wrapper .sophieInfo .modal #overlay.active {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 .blogContent .wrapper .sophieInfo .sophieSummary h4 {
   text-transform: uppercase;
 }
@@ -1320,9 +1362,6 @@ header {
   #home .wrapper .headingTitle h2 {
     margin-left: 20px;
   }
-  button {
-    width: 100%;
-  }
   .description {
     padding: 120px 40px 160px;
   }
@@ -1332,6 +1371,9 @@ header {
   }
   .description .wrapper p {
     padding: 0;
+  }
+  .description .wrapper button {
+    width: 100%;
   }
   .hobbySection .hobby .favoriteContainer .favoriteImgContainer {
     width: 90%;
@@ -1343,6 +1385,9 @@ header {
   }
   .hobbySection .hobby .favoriteContainer .favoriteContent .innerContent p {
     padding-left: 15px;
+  }
+  .hobbySection .hobby .favoriteContainer .favoriteContent .innerContent button {
+    width: 100%;
   }
   .hobbySection .hobby .travelContainer {
     width: 90%;
@@ -1357,6 +1402,9 @@ header {
   .hobbySection .hobby .travelContainer .travelContent {
     width: 100%;
     padding: 0;
+  }
+  .hobbySection .hobby .travelContainer button {
+    width: 100%;
   }
   .contact {
     height: auto;
@@ -1388,6 +1436,9 @@ header {
     margin-top: 30px;
     width: 100%;
     padding: 0;
+  }
+  .journey .journeyContentContainer .journeyContent button {
+    width: 100%;
   }
   .imgGallery .wrapper .arrow-prev, .imgGallery .wrapper .arrow-next {
     top: 85%;
