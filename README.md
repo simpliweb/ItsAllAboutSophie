@@ -1,3 +1,4 @@
-React app created to offer random cocktail suggestion.
+Multi-page blog-type website made with HTML/SCSS/JavaScript.
 
-![image](https://github.com/simpliweb/ItsAllAboutSophie/assets/77793080/216fe88e-962c-4de9-8e46-7f356edf2bb4)
+![image](https://github.com/simpliweb/ItsAllAboutSophie/assets/77793080/b4dcd175-e1ff-44f6-8849-60a507100d5a)
+
